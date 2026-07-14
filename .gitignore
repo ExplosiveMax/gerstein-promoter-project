@@ -1,0 +1,23 @@
+# Large genomic data — regenerable or re-downloadable, don't commit
+*.fa
+*.fasta
+*.fna
+*.fai
+*.gz
+*.bam
+*.bigWig
+
+# But DO keep small BED files (coordinates are tiny + useful to version)
+!*.bed
+
+# Model cache / weights
+*.bin
+*.safetensors
+__pycache__/
+*.pyc
+
+# OS junk
+.DS_Store
+
+# Optional: backups you made
+*_REAL_backup.*
