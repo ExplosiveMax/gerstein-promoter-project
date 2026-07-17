@@ -10,7 +10,6 @@ UORF_BED = "uorfs_chr22_capped.bed"
 STARTS = {"ATG", "CTG", "GTG", "TTG", "ACG"}  # match uORF start diversity
 STOPS  = {"TAA", "TAG", "TGA"}
 
-# ---------- load chr22 ----------
 print("Loading chr22...")
 chr22 = ""
 with open("chr22.fa") as f:
@@ -23,7 +22,7 @@ def revcomp(s):
     c = {"A":"T","T":"A","C":"G","G":"C","N":"N"}
     return "".join(c.get(b,"N") for b in reversed(s))
 
-# ---------- 5'UTR intervals (strand-aware) ----------
+# 5'UTR intervals (strand-aware) 
 tx = defaultdict(lambda: {"utr": [], "cds": [], "strand": None})
 with gzip.open(GTF, "rt") as f:
     for line in f:

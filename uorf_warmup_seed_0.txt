@@ -1,0 +1,61 @@
+Loading sequences...
+Random seed: 0
+Promoters: 719, Random: 711
+Train: 1144, Test: 286
+Loading tokenizer...
+Tokenizing...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/143, loss: 0.6896
+Epoch 1, batch 20/143, loss: 0.6900
+Epoch 1, batch 30/143, loss: 0.6895
+Epoch 1, batch 40/143, loss: 0.6661
+Epoch 1, batch 50/143, loss: 0.6890
+Epoch 1, batch 60/143, loss: 0.6646
+Epoch 1, batch 70/143, loss: 0.6751
+Epoch 1, batch 80/143, loss: 0.6934
+Epoch 1, batch 90/143, loss: 0.6385
+Epoch 1, batch 100/143, loss: 0.6931
+Epoch 1, batch 110/143, loss: 0.6615
+Epoch 1, batch 120/143, loss: 0.6587
+Epoch 1, batch 130/143, loss: 0.6817
+Epoch 1, batch 140/143, loss: 0.7141
+Epoch 1 complete. Avg loss: 0.6911
+Epoch 2, batch 10/143, loss: 0.6185
+Epoch 2, batch 20/143, loss: 0.6616
+Epoch 2, batch 30/143, loss: 0.7018
+Epoch 2, batch 40/143, loss: 0.6680
+Epoch 2, batch 50/143, loss: 0.6636
+Epoch 2, batch 60/143, loss: 0.6304
+Epoch 2, batch 70/143, loss: 0.5640
+Epoch 2, batch 80/143, loss: 0.7591
+Epoch 2, batch 90/143, loss: 0.6519
+Epoch 2, batch 100/143, loss: 0.6614
+Epoch 2, batch 110/143, loss: 0.7572
+Epoch 2, batch 120/143, loss: 0.5861
+Epoch 2, batch 130/143, loss: 0.6986
+Epoch 2, batch 140/143, loss: 0.7276
+Epoch 2 complete. Avg loss: 0.6600
+Epoch 3, batch 10/143, loss: 0.6778
+Epoch 3, batch 20/143, loss: 0.5728
+Epoch 3, batch 30/143, loss: 0.5945
+Epoch 3, batch 40/143, loss: 0.5311
+Epoch 3, batch 50/143, loss: 0.5736
+Epoch 3, batch 60/143, loss: 0.7645
+Epoch 3, batch 70/143, loss: 0.5729
+Epoch 3, batch 80/143, loss: 0.5642
+Epoch 3, batch 90/143, loss: 0.5653
+Epoch 3, batch 100/143, loss: 0.6821
+Epoch 3, batch 110/143, loss: 0.5773
+Epoch 3, batch 120/143, loss: 0.7947
+Epoch 3, batch 130/143, loss: 0.5296
+Epoch 3, batch 140/143, loss: 0.5698
+Epoch 3 complete. Avg loss: 0.6243
+
+Evaluating...
+
+AUC Score: 0.6786
+FINAL_RESULT seed=0 auc=0.6786
+0.5 = random chance, higher = model can distinguish promoters from random DNA
