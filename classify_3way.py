@@ -1,4 +1,11 @@
 import torch
+from transformers.models.auto.auto_factory import _BaseAutoModelClass
+
+def _lenient_register(cls, config_class, model_class, exist_ok=False):
+    cls._model_mapping.register(config_class, model_class, exist_ok=True)
+
+_BaseAutoModelClass.register = classmethod(_lenient_register)
+
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, AutoConfig
 from torch.utils.data import Dataset, DataLoader
 from sklearn.metrics import roc_auc_score, confusion_matrix, accuracy_score
