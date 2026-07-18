@@ -16,6 +16,13 @@
 __pycache__/
 *.pyc
 
+# Regenerable interval caches (rebuilt automatically from the .gtf.gz files)
+*.pkl
+
+# Local virtualenv (created to isolate DNABERT-2's fragile trust_remote_code
+# deps from the shared transformers install)
+venv_genomewide/
+
 # OS junk
 .DS_Store
 
