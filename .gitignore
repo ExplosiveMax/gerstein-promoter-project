@@ -16,6 +16,9 @@
 __pycache__/
 *.pyc
 
+# Regenerable interval caches (rebuilt automatically from the .gtf.gz files)
+*.pkl
+
 # OS junk
 .DS_Store
 
