@@ -1,4 +1,19 @@
 import torch
+from transformers.models.auto.auto_factory import _BaseAutoModelClass
+
+# The DNABERT-2 remote-code BertForSequenceClassification declares
+# config_class = transformers.BertConfig (the built-in one) instead of its
+# own dynamically-loaded configuration_bert.BertConfig, which trips the
+# strict consistency check newer transformers versions added to
+# AutoModel.register(). Relax it to the old (pre-check) behavior rather
+# than pinning to a years-old transformers/tokenizers combination that
+# doesn't have prebuilt wheels for this Python version.
+def _lenient_register(cls, config_class, model_class, exist_ok=False):
+    cls._model_mapping.register(config_class, model_class, exist_ok=True)
+
+
+_BaseAutoModelClass.register = classmethod(_lenient_register)
+
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, AutoConfig
 from torch.utils.data import Dataset, DataLoader
 from sklearn.metrics import roc_auc_score, confusion_matrix, accuracy_score
