@@ -90,7 +90,7 @@ model = model.to(device)
 
 from transformers import get_linear_schedule_with_warmup
 optimizer = torch.optim.AdamW(model.parameters(), lr=2e-5)
-num_epochs = 3
+num_epochs = 6
 total_steps = len(train_loader) * num_epochs
 scheduler = get_linear_schedule_with_warmup(
     optimizer,
