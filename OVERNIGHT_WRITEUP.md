@@ -196,20 +196,29 @@ chr22 pipeline's shortcuts:
 Sanity: all windows 1000 bp, 0% N after the gap filter, mean GC functional 0.505
 / pseudo 0.409 / random 0.434.
 
-### Result (seed 42, genome-wide)
+### Result (genome-wide, 5 seeds: 0/1/42/123/999 — all finished)
 
-```
-Overall accuracy: 0.613
-AUC functional vs rest: 0.814
-AUC pseudogene vs rest: 0.722
-AUC random  vs rest:    0.756
-```
+All five seeds completed (they ran much faster than I first estimated, ~10 min
+each rather than ~2 h — the machine was free once your fixed-offset sweep ended,
+so nothing was competing for CPU). Mean ± sd:
 
-Compared to the chr22-only 3-way (5-seed mean): functional-vs-rest ≈ 0.87,
-pseudogene-vs-rest ≈ 0.85, random-vs-rest ≈ 0.92.
+| metric | genome-wide (n=5) | chr22-only (n=5) |
+|---|---|---|
+| Overall accuracy       | 0.639 ± 0.040 | 0.70 |
+| AUC functional vs rest | **0.843 ± 0.023** | 0.867 |
+| AUC pseudogene vs rest | **0.734 ± 0.023** | 0.850 |
+| AUC random vs rest     | **0.772 ± 0.023** | 0.924 |
 
-**So the AUCs drop when we go genome-wide** — most visibly for pseudogene and
-random. Two things to keep in mind before reading too much into that:
+Per-seed AUCs (functional / pseudogene / random):
+seed 0 = .820/.719/.764, seed 1 = .910/.717/.800, seed 42 = .814/.722/.756,
+seed 123 = .799/.745/.746, seed 999 = .874/.769/.791. See
+`plot_3way_genomewide_auc.png` for the side-by-side bar chart.
+
+**So the AUCs drop when we go genome-wide** — functional holds up (0.843 vs
+0.867), but **pseudogene (0.850 → 0.734) and random (0.924 → 0.772) fall
+substantially**, and the gaps are much larger than the ±0.02 seed scatter, so
+they're real, not noise. Two things to keep in mind before reading too much into
+that:
 
 - **Different pseudogene population.** The chr22 3-way defined pseudogenes by
   `gene_type` string-matching against the *basic annotation* (~90 pseudogenes on
@@ -221,10 +230,10 @@ random. Two things to keep in mind before reading too much into that:
   compositional giveaways — expected to *lower* AUC and make the number more
   honest.
 
-This is a **single seed** (each CPU run is ~2 h). I launched seeds 0/1/123/999 in
-sequence (`run_genomewide_seeds.sh`, PID logged in `genomewide_seeds_driver.log`);
-they should trickle in overnight. Run `python3 aggregate_genomewide.py` in the
-morning to get the mean±std across whatever finished.
+All five seeds are done (`run_genomewide_seeds.sh` → `genomewide_seeds_driver.log`
+finished at 12:29). Re-run `python3 aggregate_genomewide.py` any time to
+regenerate the table above, or `plot_3way_genomewide.py` (needs the `dnabert2`
+env's matplotlib — plotting only, no model load) to redraw the chart.
 
 ---
 
@@ -250,12 +259,12 @@ happy to do that with you, but I didn't want to change a shared env unprompted.
 
 ## 5. What I'd do next (for you + Joel)
 
-1. Let the remaining genome-wide seeds finish, then `aggregate_genomewide.py` for
-   error bars; add a bar plot mirroring `plot_3way.py`.
+1. ~~Let the remaining genome-wide seeds finish, then aggregate for error bars +
+   a bar plot.~~ **Done** — 5 seeds, `plot_3way_genomewide_auc.png`.
 2. Decide on **one** GC tolerance and repeat threshold and thread them through as
    shared constants — the ±0.03 vs ±0.10 split makes cross-experiment comparison
    shaky.
-3. If genome-wide pseudogene-vs-rest holds around ~0.72 across seeds, that's the
+3. Genome-wide pseudogene-vs-rest held at 0.734 ± 0.023 across 5 seeds — that's the
    interesting headline: DNABERT-2 separates functional from pseudogene promoters
    noticeably *less* well on the stringent 2-way-consensus set than the chr22
    number suggested.
