@@ -1,0 +1,73 @@
+/Users/maxwellkim/promoter_project/.claude/worktrees/awesome-mendeleev-f66987/venv_genomewide/lib/python3.12/site-packages/transformers/utils/generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+Loading sequences...
+Functional: 300, Pseudo: 300, Random: 599
+Train: 959, Test: 240
+Loading tokenizer...
+/Users/maxwellkim/promoter_project/.claude/worktrees/awesome-mendeleev-f66987/venv_genomewide/lib/python3.12/site-packages/huggingface_hub/file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Loading model...
+/Users/maxwellkim/promoter_project/.claude/worktrees/awesome-mendeleev-f66987/venv_genomewide/lib/python3.12/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/Users/maxwellkim/.cache/huggingface/modules/transformers_modules/zhihan1996/DNABERT-2-117M/7bce263b15377fc15361f52cfab88f8b586abda0/bert_layers.py:126: UserWarning: Unable to import Triton; defaulting MosaicBERT attention implementation to pytorch (this will reduce throughput when using this model).
+  warnings.warn(
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at zhihan1996/DNABERT-2-117M and are newly initialized: ['bert.pooler.dense.weight', 'classifier.weight', 'classifier.bias', 'bert.pooler.dense.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Using device: cpu
+
+Fine-tuning...
+Epoch 1, batch 10/120, loss: 0.9970
+Epoch 1, batch 20/120, loss: 1.1041
+Epoch 1, batch 30/120, loss: 1.0065
+Epoch 1, batch 40/120, loss: 1.0119
+Epoch 1, batch 50/120, loss: 1.0932
+Epoch 1, batch 60/120, loss: 1.0582
+Epoch 1, batch 70/120, loss: 1.1557
+Epoch 1, batch 80/120, loss: 0.8968
+Epoch 1, batch 90/120, loss: 1.0159
+Epoch 1, batch 100/120, loss: 1.0651
+Epoch 1, batch 110/120, loss: 1.1036
+Epoch 1, batch 120/120, loss: 1.1135
+Epoch 1 complete. Avg loss: 0.9845
+Epoch 2, batch 10/120, loss: 0.7842
+Epoch 2, batch 20/120, loss: 0.7107
+Epoch 2, batch 30/120, loss: 0.8121
+Epoch 2, batch 40/120, loss: 0.7827
+Epoch 2, batch 50/120, loss: 1.0309
+Epoch 2, batch 60/120, loss: 0.9510
+Epoch 2, batch 70/120, loss: 0.6603
+Epoch 2, batch 80/120, loss: 0.8507
+Epoch 2, batch 90/120, loss: 0.5369
+Epoch 2, batch 100/120, loss: 1.0298
+Epoch 2, batch 110/120, loss: 1.1399
+Epoch 2, batch 120/120, loss: 0.8710
+Epoch 2 complete. Avg loss: 0.7764
+Epoch 3, batch 10/120, loss: 0.8179
+Epoch 3, batch 20/120, loss: 0.3374
+Epoch 3, batch 30/120, loss: 0.5452
+Epoch 3, batch 40/120, loss: 0.4915
+Epoch 3, batch 50/120, loss: 0.6420
+Epoch 3, batch 60/120, loss: 0.6681
+Epoch 3, batch 70/120, loss: 0.3748
+Epoch 3, batch 80/120, loss: 1.0035
+Epoch 3, batch 90/120, loss: 0.6316
+Epoch 3, batch 100/120, loss: 0.3646
+Epoch 3, batch 110/120, loss: 0.3473
+Epoch 3, batch 120/120, loss: 0.3412
+Epoch 3 complete. Avg loss: 0.5275
+
+Evaluating...
+
+=== RESULTS seed=1 (genome-wide) ===
+Overall accuracy: 0.7000
+AUC functional vs rest: 0.9099
+AUC pseudogene vs rest: 0.7166
+AUC random vs rest: 0.8000
+
+Confusion matrix (rows=true, cols=pred):
+           functi  pseudo  random
+functional     40       7      13
+pseudogene      5      19      36
+    random      3       8     109
+
+FINAL_RESULT seed=1 acc=0.7000
