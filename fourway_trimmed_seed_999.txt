@@ -1,0 +1,113 @@
+Loading sequences...
+uORF: 719, withinUTR: 719, nonUTR: 719, random: 719
+Train: 2300, Test: 576
+Loading tokenizer...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/288, loss: 1.3095
+Epoch 1, batch 20/288, loss: 1.3360
+Epoch 1, batch 30/288, loss: 1.3713
+Epoch 1, batch 40/288, loss: 1.2547
+Epoch 1, batch 50/288, loss: 1.0399
+Epoch 1, batch 60/288, loss: 1.3873
+Epoch 1, batch 70/288, loss: 1.2919
+Epoch 1, batch 80/288, loss: 1.2254
+Epoch 1, batch 90/288, loss: 1.0587
+Epoch 1, batch 100/288, loss: 1.2977
+Epoch 1, batch 110/288, loss: 1.0971
+Epoch 1, batch 120/288, loss: 1.3213
+Epoch 1, batch 130/288, loss: 1.2969
+Epoch 1, batch 140/288, loss: 1.0975
+Epoch 1, batch 150/288, loss: 1.0912
+Epoch 1, batch 160/288, loss: 1.0584
+Epoch 1, batch 170/288, loss: 1.0241
+Epoch 1, batch 180/288, loss: 0.9169
+Epoch 1, batch 190/288, loss: 1.1807
+Epoch 1, batch 200/288, loss: 1.1845
+Epoch 1, batch 210/288, loss: 1.1432
+Epoch 1, batch 220/288, loss: 1.0486
+Epoch 1, batch 230/288, loss: 0.8080
+Epoch 1, batch 240/288, loss: 1.0487
+Epoch 1, batch 250/288, loss: 0.9035
+Epoch 1, batch 260/288, loss: 0.9627
+Epoch 1, batch 270/288, loss: 0.8233
+Epoch 1, batch 280/288, loss: 1.1010
+Epoch 1 complete. Avg loss: 1.2104
+Epoch 2, batch 10/288, loss: 1.3513
+Epoch 2, batch 20/288, loss: 1.2568
+Epoch 2, batch 30/288, loss: 0.8589
+Epoch 2, batch 40/288, loss: 1.0806
+Epoch 2, batch 50/288, loss: 1.3526
+Epoch 2, batch 60/288, loss: 1.0175
+Epoch 2, batch 70/288, loss: 1.0171
+Epoch 2, batch 80/288, loss: 1.0043
+Epoch 2, batch 90/288, loss: 0.7583
+Epoch 2, batch 100/288, loss: 0.8292
+Epoch 2, batch 110/288, loss: 1.2679
+Epoch 2, batch 120/288, loss: 0.9369
+Epoch 2, batch 130/288, loss: 0.6797
+Epoch 2, batch 140/288, loss: 1.5076
+Epoch 2, batch 150/288, loss: 1.1322
+Epoch 2, batch 160/288, loss: 0.7716
+Epoch 2, batch 170/288, loss: 0.8969
+Epoch 2, batch 180/288, loss: 0.9463
+Epoch 2, batch 190/288, loss: 0.8913
+Epoch 2, batch 200/288, loss: 0.8139
+Epoch 2, batch 210/288, loss: 1.2220
+Epoch 2, batch 220/288, loss: 0.8113
+Epoch 2, batch 230/288, loss: 0.6227
+Epoch 2, batch 240/288, loss: 1.1389
+Epoch 2, batch 250/288, loss: 1.2194
+Epoch 2, batch 260/288, loss: 0.7550
+Epoch 2, batch 270/288, loss: 1.1807
+Epoch 2, batch 280/288, loss: 0.8555
+Epoch 2 complete. Avg loss: 1.0211
+Epoch 3, batch 10/288, loss: 0.8830
+Epoch 3, batch 20/288, loss: 0.8879
+Epoch 3, batch 30/288, loss: 0.3294
+Epoch 3, batch 40/288, loss: 0.8284
+Epoch 3, batch 50/288, loss: 0.7137
+Epoch 3, batch 60/288, loss: 0.7615
+Epoch 3, batch 70/288, loss: 0.8179
+Epoch 3, batch 80/288, loss: 0.5086
+Epoch 3, batch 90/288, loss: 0.8882
+Epoch 3, batch 100/288, loss: 1.0574
+Epoch 3, batch 110/288, loss: 1.2967
+Epoch 3, batch 120/288, loss: 1.1019
+Epoch 3, batch 130/288, loss: 1.1095
+Epoch 3, batch 140/288, loss: 0.7837
+Epoch 3, batch 150/288, loss: 0.8767
+Epoch 3, batch 160/288, loss: 0.9934
+Epoch 3, batch 170/288, loss: 1.0136
+Epoch 3, batch 180/288, loss: 0.9964
+Epoch 3, batch 190/288, loss: 0.8429
+Epoch 3, batch 200/288, loss: 1.2318
+Epoch 3, batch 210/288, loss: 0.8588
+Epoch 3, batch 220/288, loss: 1.0271
+Epoch 3, batch 230/288, loss: 0.8652
+Epoch 3, batch 240/288, loss: 0.8427
+Epoch 3, batch 250/288, loss: 0.6036
+Epoch 3, batch 260/288, loss: 1.2950
+Epoch 3, batch 270/288, loss: 0.7784
+Epoch 3, batch 280/288, loss: 1.0391
+Epoch 3 complete. Avg loss: 0.8985
+
+Evaluating...
+
+=== RESULTS seed=999 ===
+Overall accuracy: 0.5920
+AUC uORF vs rest: 0.8407
+AUC withinUTR vs rest: 0.7722
+AUC nonUTR vs rest: 0.8562
+AUC random vs rest: 0.8809
+
+Confusion matrix (rows=true, cols=pred):
+             uORF  within  nonUTR  random
+      uORF    114      17       8       5
+ withinUTR     59      56      15      14
+    nonUTR     34      22      81       7
+    random     19      18      17      90
+
+FINAL_RESULT seed=999 acc=0.5920
