@@ -1,0 +1,49 @@
+Loading sequences...
+Random seed: 999
+Promoters: 500, Random: 500
+Train: 800, Test: 200
+Loading tokenizer...
+Tokenizing...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/100, loss: 0.6516
+Epoch 1, batch 20/100, loss: 0.6295
+Epoch 1, batch 30/100, loss: 0.7014
+Epoch 1, batch 40/100, loss: 0.5242
+Epoch 1, batch 50/100, loss: 0.4192
+Epoch 1, batch 60/100, loss: 0.6804
+Epoch 1, batch 70/100, loss: 0.5826
+Epoch 1, batch 80/100, loss: 0.3078
+Epoch 1, batch 90/100, loss: 0.3212
+Epoch 1, batch 100/100, loss: 0.2317
+Epoch 1 complete. Avg loss: 0.5535
+Epoch 2, batch 10/100, loss: 0.3971
+Epoch 2, batch 20/100, loss: 0.5378
+Epoch 2, batch 30/100, loss: 0.3515
+Epoch 2, batch 40/100, loss: 0.3676
+Epoch 2, batch 50/100, loss: 0.2574
+Epoch 2, batch 60/100, loss: 0.7271
+Epoch 2, batch 70/100, loss: 0.5629
+Epoch 2, batch 80/100, loss: 0.2621
+Epoch 2, batch 90/100, loss: 0.7409
+Epoch 2, batch 100/100, loss: 0.7506
+Epoch 2 complete. Avg loss: 0.4215
+Epoch 3, batch 10/100, loss: 0.3180
+Epoch 3, batch 20/100, loss: 0.2508
+Epoch 3, batch 30/100, loss: 0.2960
+Epoch 3, batch 40/100, loss: 0.4268
+Epoch 3, batch 50/100, loss: 0.4513
+Epoch 3, batch 60/100, loss: 0.1525
+Epoch 3, batch 70/100, loss: 0.2103
+Epoch 3, batch 80/100, loss: 0.5437
+Epoch 3, batch 90/100, loss: 0.0851
+Epoch 3, batch 100/100, loss: 0.3357
+Epoch 3 complete. Avg loss: 0.3034
+
+Evaluating...
+
+AUC Score: 0.8472
+FINAL_RESULT seed=999 auc=0.8472
+0.5 = random chance, higher = model can distinguish promoters from random DNA
