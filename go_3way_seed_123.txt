@@ -1,0 +1,45 @@
+Loading sequences...
+Immune: 230, GPCR: 230, Transmembrane: 230
+Train: 552, Test: 138
+Loading tokenizer...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/69, loss: 1.1477
+Epoch 1, batch 20/69, loss: 1.0738
+Epoch 1, batch 30/69, loss: 1.0655
+Epoch 1, batch 40/69, loss: 1.0826
+Epoch 1, batch 50/69, loss: 1.0574
+Epoch 1, batch 60/69, loss: 1.1306
+Epoch 1 complete. Avg loss: 1.0788
+Epoch 2, batch 10/69, loss: 1.0700
+Epoch 2, batch 20/69, loss: 0.9659
+Epoch 2, batch 30/69, loss: 0.9522
+Epoch 2, batch 40/69, loss: 0.9222
+Epoch 2, batch 50/69, loss: 0.9157
+Epoch 2, batch 60/69, loss: 1.0793
+Epoch 2 complete. Avg loss: 0.9707
+Epoch 3, batch 10/69, loss: 1.0265
+Epoch 3, batch 20/69, loss: 0.6350
+Epoch 3, batch 30/69, loss: 0.8343
+Epoch 3, batch 40/69, loss: 0.8202
+Epoch 3, batch 50/69, loss: 0.7461
+Epoch 3, batch 60/69, loss: 0.8756
+Epoch 3 complete. Avg loss: 0.7917
+
+Evaluating...
+
+=== RESULTS seed=123 (GO 3-way) ===
+Overall accuracy: 0.4493
+AUC immune vs rest: 0.6304
+AUC gpcr vs rest: 0.6304
+AUC transmembrane vs rest: 0.6661
+
+Confusion matrix (rows=true, cols=pred):
+           immune    gpcr  transm
+      immune     19      17      10
+        gpcr     11      20      15
+transmembran     10      13      23
+
+FINAL_RESULT seed=123 acc=0.4493
