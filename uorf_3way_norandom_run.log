@@ -1,0 +1,300 @@
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/huggingface_hub/file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/Users/maxwellkim/.cache/huggingface/modules/transformers_modules/zhihan1996/DNABERT-2-117M/7bce263b15377fc15361f52cfab88f8b586abda0/bert_layers.py:126: UserWarning: Unable to import Triton; defaulting MosaicBERT attention implementation to pytorch (this will reduce throughput when using this model).
+  warnings.warn(
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at zhihan1996/DNABERT-2-117M and are newly initialized: ['classifier.bias', 'bert.pooler.dense.bias', 'classifier.weight', 'bert.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading sequences...
+uORF(trimmed): 719, withinUTR: 719, nonUTR: 719
+Train: 1725, Test: 432
+Loading tokenizer...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/216, loss: 1.1077
+Epoch 1, batch 20/216, loss: 1.0994
+Epoch 1, batch 30/216, loss: 1.1042
+Epoch 1, batch 40/216, loss: 1.1037
+Epoch 1, batch 50/216, loss: 1.0936
+Epoch 1, batch 60/216, loss: 1.1199
+Epoch 1, batch 70/216, loss: 1.0971
+Epoch 1, batch 80/216, loss: 1.0894
+Epoch 1, batch 90/216, loss: 1.0396
+Epoch 1, batch 100/216, loss: 1.1298
+Epoch 1, batch 110/216, loss: 1.0351
+Epoch 1, batch 120/216, loss: 1.0867
+Epoch 1, batch 130/216, loss: 0.9704
+Epoch 1, batch 140/216, loss: 1.0230
+Epoch 1, batch 150/216, loss: 0.9732
+Epoch 1, batch 160/216, loss: 1.1274
+Epoch 1, batch 170/216, loss: 1.0071
+Epoch 1, batch 180/216, loss: 1.0270
+Epoch 1, batch 190/216, loss: 0.9713
+Epoch 1, batch 200/216, loss: 0.9058
+Epoch 1, batch 210/216, loss: 1.2272
+Epoch 1 complete. Avg loss: 1.0550
+Epoch 2, batch 10/216, loss: 0.9193
+Epoch 2, batch 20/216, loss: 1.0196
+Epoch 2, batch 30/216, loss: 1.0331
+Epoch 2, batch 40/216, loss: 1.2131
+Epoch 2, batch 50/216, loss: 0.9243
+Epoch 2, batch 60/216, loss: 0.9175
+Epoch 2, batch 70/216, loss: 0.8939
+Epoch 2, batch 80/216, loss: 0.6674
+Epoch 2, batch 90/216, loss: 1.0946
+Epoch 2, batch 100/216, loss: 0.9933
+Epoch 2, batch 110/216, loss: 1.1474
+Epoch 2, batch 120/216, loss: 0.6198
+Epoch 2, batch 130/216, loss: 0.7138
+Epoch 2, batch 140/216, loss: 0.9514
+Epoch 2, batch 150/216, loss: 0.9269
+Epoch 2, batch 160/216, loss: 1.1086
+Epoch 2, batch 170/216, loss: 0.7616
+Epoch 2, batch 180/216, loss: 0.8880
+Epoch 2, batch 190/216, loss: 0.7923
+Epoch 2, batch 200/216, loss: 0.7025
+Epoch 2, batch 210/216, loss: 0.7828
+Epoch 2 complete. Avg loss: 0.9206
+Epoch 3, batch 10/216, loss: 0.7795
+Epoch 3, batch 20/216, loss: 1.0394
+Epoch 3, batch 30/216, loss: 0.6310
+Epoch 3, batch 40/216, loss: 0.6890
+Epoch 3, batch 50/216, loss: 0.6312
+Epoch 3, batch 60/216, loss: 0.6844
+Epoch 3, batch 70/216, loss: 0.7525
+Epoch 3, batch 80/216, loss: 0.7864
+Epoch 3, batch 90/216, loss: 0.7594
+Epoch 3, batch 100/216, loss: 0.9137
+Epoch 3, batch 110/216, loss: 0.7763
+Epoch 3, batch 120/216, loss: 0.6775
+Epoch 3, batch 130/216, loss: 0.3980
+Epoch 3, batch 140/216, loss: 0.5196
+Epoch 3, batch 150/216, loss: 0.4502
+Epoch 3, batch 160/216, loss: 0.8247
+Epoch 3, batch 170/216, loss: 0.6406
+Epoch 3, batch 180/216, loss: 0.5176
+Epoch 3, batch 190/216, loss: 0.5173
+Epoch 3, batch 200/216, loss: 0.6651
+Epoch 3, batch 210/216, loss: 0.5826
+Epoch 3 complete. Avg loss: 0.7322
+
+Evaluating...
+
+=== RESULTS seed=0 (3-way, no random, trimmed uORF) ===
+Overall accuracy: 0.6551
+AUC uORF vs rest: 0.8654
+AUC withinUTR vs rest: 0.7803
+AUC nonUTR vs rest: 0.8905
+
+Confusion matrix (rows=true, cols=pred):
+                uORF  withinUTR     nonUTR
+      uORF        80         60          4
+ withinUTR        17        114         13
+    nonUTR         6         49         89
+
+FINAL_RESULT seed=0 acc=0.6551
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/huggingface_hub/file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/Users/maxwellkim/.cache/huggingface/modules/transformers_modules/zhihan1996/DNABERT-2-117M/7bce263b15377fc15361f52cfab88f8b586abda0/bert_layers.py:126: UserWarning: Unable to import Triton; defaulting MosaicBERT attention implementation to pytorch (this will reduce throughput when using this model).
+  warnings.warn(
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at zhihan1996/DNABERT-2-117M and are newly initialized: ['classifier.weight', 'classifier.bias', 'bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading sequences...
+uORF(trimmed): 719, withinUTR: 719, nonUTR: 719
+Train: 1725, Test: 432
+Loading tokenizer...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/216, loss: 1.0813
+Epoch 1, batch 20/216, loss: 1.1018
+Epoch 1, batch 30/216, loss: 1.0670
+Epoch 1, batch 40/216, loss: 1.1628
+Epoch 1, batch 50/216, loss: 1.0810
+Epoch 1, batch 60/216, loss: 1.1247
+Epoch 1, batch 70/216, loss: 1.0954
+Epoch 1, batch 80/216, loss: 1.0921
+Epoch 1, batch 90/216, loss: 1.0931
+Epoch 1, batch 100/216, loss: 1.0688
+Epoch 1, batch 110/216, loss: 0.9595
+Epoch 1, batch 120/216, loss: 1.0161
+Epoch 1, batch 130/216, loss: 0.9626
+Epoch 1, batch 140/216, loss: 1.0600
+Epoch 1, batch 150/216, loss: 1.0899
+Epoch 1, batch 160/216, loss: 0.8039
+Epoch 1, batch 170/216, loss: 1.0883
+Epoch 1, batch 180/216, loss: 0.9710
+Epoch 1, batch 190/216, loss: 1.1980
+Epoch 1, batch 200/216, loss: 1.0723
+Epoch 1, batch 210/216, loss: 0.9193
+Epoch 1 complete. Avg loss: 1.0462
+Epoch 2, batch 10/216, loss: 0.7706
+Epoch 2, batch 20/216, loss: 0.7194
+Epoch 2, batch 30/216, loss: 1.0607
+Epoch 2, batch 40/216, loss: 1.1108
+Epoch 2, batch 50/216, loss: 1.0507
+Epoch 2, batch 60/216, loss: 0.9733
+Epoch 2, batch 70/216, loss: 1.0159
+Epoch 2, batch 80/216, loss: 0.7946
+Epoch 2, batch 90/216, loss: 1.1732
+Epoch 2, batch 100/216, loss: 0.9976
+Epoch 2, batch 110/216, loss: 1.0966
+Epoch 2, batch 120/216, loss: 0.7542
+Epoch 2, batch 130/216, loss: 0.9707
+Epoch 2, batch 140/216, loss: 1.1716
+Epoch 2, batch 150/216, loss: 0.8862
+Epoch 2, batch 160/216, loss: 0.7509
+Epoch 2, batch 170/216, loss: 0.7415
+Epoch 2, batch 180/216, loss: 0.7237
+Epoch 2, batch 190/216, loss: 0.8525
+Epoch 2, batch 200/216, loss: 1.0093
+Epoch 2, batch 210/216, loss: 1.0331
+Epoch 2 complete. Avg loss: 0.9339
+Epoch 3, batch 10/216, loss: 0.8086
+Epoch 3, batch 20/216, loss: 0.6693
+Epoch 3, batch 30/216, loss: 0.7278
+Epoch 3, batch 40/216, loss: 0.9954
+Epoch 3, batch 50/216, loss: 0.8201
+Epoch 3, batch 60/216, loss: 0.7158
+Epoch 3, batch 70/216, loss: 0.8922
+Epoch 3, batch 80/216, loss: 0.7935
+Epoch 3, batch 90/216, loss: 0.6751
+Epoch 3, batch 100/216, loss: 0.8749
+Epoch 3, batch 110/216, loss: 0.6696
+Epoch 3, batch 120/216, loss: 0.6497
+Epoch 3, batch 130/216, loss: 0.7068
+Epoch 3, batch 140/216, loss: 0.4759
+Epoch 3, batch 150/216, loss: 0.6255
+Epoch 3, batch 160/216, loss: 1.1229
+Epoch 3, batch 170/216, loss: 0.8449
+Epoch 3, batch 180/216, loss: 0.7403
+Epoch 3, batch 190/216, loss: 0.7817
+Epoch 3, batch 200/216, loss: 1.2991
+Epoch 3, batch 210/216, loss: 0.8915
+Epoch 3 complete. Avg loss: 0.8435
+
+Evaluating...
+
+=== RESULTS seed=42 (3-way, no random, trimmed uORF) ===
+Overall accuracy: 0.5995
+AUC uORF vs rest: 0.8115
+AUC withinUTR vs rest: 0.7224
+AUC nonUTR vs rest: 0.8762
+
+Confusion matrix (rows=true, cols=pred):
+                uORF  withinUTR     nonUTR
+      uORF       108         14         22
+ withinUTR        54         32         58
+    nonUTR        20          5        119
+
+FINAL_RESULT seed=42 acc=0.5995
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/huggingface_hub/file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/Users/maxwellkim/.cache/huggingface/modules/transformers_modules/zhihan1996/DNABERT-2-117M/7bce263b15377fc15361f52cfab88f8b586abda0/bert_layers.py:126: UserWarning: Unable to import Triton; defaulting MosaicBERT attention implementation to pytorch (this will reduce throughput when using this model).
+  warnings.warn(
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at zhihan1996/DNABERT-2-117M and are newly initialized: ['bert.pooler.dense.bias', 'classifier.bias', 'bert.pooler.dense.weight', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading sequences...
+uORF(trimmed): 719, withinUTR: 719, nonUTR: 719
+Train: 1725, Test: 432
+Loading tokenizer...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/216, loss: 1.0874
+Epoch 1, batch 20/216, loss: 1.1275
+Epoch 1, batch 30/216, loss: 1.0766
+Epoch 1, batch 40/216, loss: 1.1569
+Epoch 1, batch 50/216, loss: 1.0599
+Epoch 1, batch 60/216, loss: 1.0826
+Epoch 1, batch 70/216, loss: 1.1182
+Epoch 1, batch 80/216, loss: 1.0685
+Epoch 1, batch 90/216, loss: 1.0888
+Epoch 1, batch 100/216, loss: 1.1309
+Epoch 1, batch 110/216, loss: 1.0421
+Epoch 1, batch 120/216, loss: 1.1475
+Epoch 1, batch 130/216, loss: 1.0534
+Epoch 1, batch 140/216, loss: 1.0877
+Epoch 1, batch 150/216, loss: 1.0514
+Epoch 1, batch 160/216, loss: 1.0039
+Epoch 1, batch 170/216, loss: 1.0458
+Epoch 1, batch 180/216, loss: 1.0011
+Epoch 1, batch 190/216, loss: 1.0058
+Epoch 1, batch 200/216, loss: 1.0559
+Epoch 1, batch 210/216, loss: 0.9748
+Epoch 1 complete. Avg loss: 1.0728
+Epoch 2, batch 10/216, loss: 1.1029
+Epoch 2, batch 20/216, loss: 1.0894
+Epoch 2, batch 30/216, loss: 0.9666
+Epoch 2, batch 40/216, loss: 1.1174
+Epoch 2, batch 50/216, loss: 1.1248
+Epoch 2, batch 60/216, loss: 1.0542
+Epoch 2, batch 70/216, loss: 1.1517
+Epoch 2, batch 80/216, loss: 1.0494
+Epoch 2, batch 90/216, loss: 1.1110
+Epoch 2, batch 100/216, loss: 1.0144
+Epoch 2, batch 110/216, loss: 0.9265
+Epoch 2, batch 120/216, loss: 0.9830
+Epoch 2, batch 130/216, loss: 0.9525
+Epoch 2, batch 140/216, loss: 0.9883
+Epoch 2, batch 150/216, loss: 1.0741
+Epoch 2, batch 160/216, loss: 1.0004
+Epoch 2, batch 170/216, loss: 0.9693
+Epoch 2, batch 180/216, loss: 1.3237
+Epoch 2, batch 190/216, loss: 1.2215
+Epoch 2, batch 200/216, loss: 0.8898
+Epoch 2, batch 210/216, loss: 0.9314
+Epoch 2 complete. Avg loss: 1.0616
+Epoch 3, batch 10/216, loss: 0.9239
+Epoch 3, batch 20/216, loss: 1.0691
+Epoch 3, batch 30/216, loss: 0.9270
+Epoch 3, batch 40/216, loss: 0.9050
+Epoch 3, batch 50/216, loss: 1.1351
+Epoch 3, batch 60/216, loss: 0.8214
+Epoch 3, batch 70/216, loss: 0.7326
+Epoch 3, batch 80/216, loss: 1.2255
+Epoch 3, batch 90/216, loss: 0.8988
+Epoch 3, batch 100/216, loss: 0.7611
+Epoch 3, batch 110/216, loss: 1.1034
+Epoch 3, batch 120/216, loss: 0.9408
+Epoch 3, batch 130/216, loss: 0.6911
+Epoch 3, batch 140/216, loss: 0.9216
+Epoch 3, batch 150/216, loss: 0.7211
+Epoch 3, batch 160/216, loss: 1.0880
+Epoch 3, batch 170/216, loss: 1.2720
+Epoch 3, batch 180/216, loss: 1.0545
+Epoch 3, batch 190/216, loss: 0.8036
+Epoch 3, batch 200/216, loss: 1.0067
+Epoch 3, batch 210/216, loss: 1.0214
+Epoch 3 complete. Avg loss: 0.9656
+
+Evaluating...
+
+=== RESULTS seed=123 (3-way, no random, trimmed uORF) ===
+Overall accuracy: 0.4792
+AUC uORF vs rest: 0.7488
+AUC withinUTR vs rest: 0.6146
+AUC nonUTR vs rest: 0.8235
+
+Confusion matrix (rows=true, cols=pred):
+                uORF  withinUTR     nonUTR
+      uORF        63          8         73
+ withinUTR        41         12         91
+    nonUTR         8          4        132
+
+FINAL_RESULT seed=123 acc=0.4792
