@@ -1,0 +1,43 @@
+Loading sequences...
+High: 483, Low: 483
+Train: 772, Test: 194
+Loading tokenizer...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/97, loss: 0.6388
+Epoch 1, batch 20/97, loss: 0.7029
+Epoch 1, batch 30/97, loss: 0.6471
+Epoch 1, batch 40/97, loss: 0.4536
+Epoch 1, batch 50/97, loss: 0.3498
+Epoch 1, batch 60/97, loss: 0.3049
+Epoch 1, batch 70/97, loss: 0.2337
+Epoch 1, batch 80/97, loss: 0.4098
+Epoch 1, batch 90/97, loss: 0.2150
+Epoch 1 complete. Avg loss: 0.5006
+Epoch 2, batch 10/97, loss: 0.1055
+Epoch 2, batch 20/97, loss: 0.5874
+Epoch 2, batch 30/97, loss: 0.8126
+Epoch 2, batch 40/97, loss: 0.1536
+Epoch 2, batch 50/97, loss: 0.1969
+Epoch 2, batch 60/97, loss: 0.3155
+Epoch 2, batch 70/97, loss: 0.2641
+Epoch 2, batch 80/97, loss: 0.2827
+Epoch 2, batch 90/97, loss: 0.2822
+Epoch 2 complete. Avg loss: 0.2952
+Epoch 3, batch 10/97, loss: 0.1371
+Epoch 3, batch 20/97, loss: 0.1565
+Epoch 3, batch 30/97, loss: 0.0366
+Epoch 3, batch 40/97, loss: 0.0425
+Epoch 3, batch 50/97, loss: 0.0526
+Epoch 3, batch 60/97, loss: 0.0357
+Epoch 3, batch 70/97, loss: 0.0505
+Epoch 3, batch 80/97, loss: 0.1072
+Epoch 3, batch 90/97, loss: 0.0681
+Epoch 3 complete. Avg loss: 0.1643
+
+Evaluating...
+
+AUC Score: 0.9372
+FINAL_RESULT seed=0 auc=0.9372

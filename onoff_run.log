@@ -1,0 +1,495 @@
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/huggingface_hub/file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/Users/maxwellkim/.cache/huggingface/modules/transformers_modules/zhihan1996/DNABERT-2-117M/7bce263b15377fc15361f52cfab88f8b586abda0/bert_layers.py:126: UserWarning: Unable to import Triton; defaulting MosaicBERT attention implementation to pytorch (this will reduce throughput when using this model).
+  warnings.warn(
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at zhihan1996/DNABERT-2-117M and are newly initialized: ['classifier.bias', 'bert.pooler.dense.weight', 'bert.pooler.dense.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading sequences...
+High: 500, Low: 500
+Train: 800, Test: 200
+Loading tokenizer...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/100, loss: 0.6834
+Epoch 1, batch 20/100, loss: 0.6979
+Epoch 1, batch 30/100, loss: 0.5892
+Epoch 1, batch 40/100, loss: 0.4839
+Epoch 1, batch 50/100, loss: 0.5955
+Epoch 1, batch 60/100, loss: 0.3641
+Epoch 1, batch 70/100, loss: 0.8095
+Epoch 1, batch 80/100, loss: 0.8041
+Epoch 1, batch 90/100, loss: 0.7082
+Epoch 1, batch 100/100, loss: 0.4717
+Epoch 1 complete. Avg loss: 0.5479
+Epoch 2, batch 10/100, loss: 0.4832
+Epoch 2, batch 20/100, loss: 0.2735
+Epoch 2, batch 30/100, loss: 0.3921
+Epoch 2, batch 40/100, loss: 0.3381
+Epoch 2, batch 50/100, loss: 0.4010
+Epoch 2, batch 60/100, loss: 0.1882
+Epoch 2, batch 70/100, loss: 0.2502
+Epoch 2, batch 80/100, loss: 0.2918
+Epoch 2, batch 90/100, loss: 0.3981
+Epoch 2, batch 100/100, loss: 0.3022
+Epoch 2 complete. Avg loss: 0.3297
+Epoch 3, batch 10/100, loss: 0.1537
+Epoch 3, batch 20/100, loss: 0.1431
+Epoch 3, batch 30/100, loss: 0.3110
+Epoch 3, batch 40/100, loss: 0.8496
+Epoch 3, batch 50/100, loss: 0.1548
+Epoch 3, batch 60/100, loss: 0.0851
+Epoch 3, batch 70/100, loss: 0.0960
+Epoch 3, batch 80/100, loss: 0.0488
+Epoch 3, batch 90/100, loss: 0.0425
+Epoch 3, batch 100/100, loss: 0.4863
+Epoch 3 complete. Avg loss: 0.1925
+
+Evaluating...
+
+AUC Score: 0.8922
+FINAL_RESULT seed=0 auc=0.8922
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/huggingface_hub/file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/Users/maxwellkim/.cache/huggingface/modules/transformers_modules/zhihan1996/DNABERT-2-117M/7bce263b15377fc15361f52cfab88f8b586abda0/bert_layers.py:126: UserWarning: Unable to import Triton; defaulting MosaicBERT attention implementation to pytorch (this will reduce throughput when using this model).
+  warnings.warn(
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at zhihan1996/DNABERT-2-117M and are newly initialized: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias', 'classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading sequences...
+High: 500, Low: 500
+Train: 800, Test: 200
+Loading tokenizer...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/100, loss: 0.6170
+Epoch 1, batch 20/100, loss: 0.6763
+Epoch 1, batch 30/100, loss: 0.5999
+Epoch 1, batch 40/100, loss: 0.4341
+Epoch 1, batch 50/100, loss: 0.6020
+Epoch 1, batch 60/100, loss: 0.8069
+Epoch 1, batch 70/100, loss: 0.5709
+Epoch 1, batch 80/100, loss: 0.3808
+Epoch 1, batch 90/100, loss: 0.2195
+Epoch 1, batch 100/100, loss: 0.1675
+Epoch 1 complete. Avg loss: 0.5334
+Epoch 2, batch 10/100, loss: 0.3339
+Epoch 2, batch 20/100, loss: 0.4989
+Epoch 2, batch 30/100, loss: 0.6868
+Epoch 2, batch 40/100, loss: 0.1846
+Epoch 2, batch 50/100, loss: 0.8116
+Epoch 2, batch 60/100, loss: 0.5082
+Epoch 2, batch 70/100, loss: 0.4754
+Epoch 2, batch 80/100, loss: 0.5506
+Epoch 2, batch 90/100, loss: 0.2148
+Epoch 2, batch 100/100, loss: 0.2060
+Epoch 2 complete. Avg loss: 0.3290
+Epoch 3, batch 10/100, loss: 0.3642
+Epoch 3, batch 20/100, loss: 0.1038
+Epoch 3, batch 30/100, loss: 0.0507
+Epoch 3, batch 40/100, loss: 0.0415
+Epoch 3, batch 50/100, loss: 0.2351
+Epoch 3, batch 60/100, loss: 0.4792
+Epoch 3, batch 70/100, loss: 0.4968
+Epoch 3, batch 80/100, loss: 0.0939
+Epoch 3, batch 90/100, loss: 0.3039
+Epoch 3, batch 100/100, loss: 0.4396
+Epoch 3 complete. Avg loss: 0.1777
+
+Evaluating...
+
+AUC Score: 0.8670
+FINAL_RESULT seed=42 auc=0.8670
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/huggingface_hub/file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/Users/maxwellkim/.cache/huggingface/modules/transformers_modules/zhihan1996/DNABERT-2-117M/7bce263b15377fc15361f52cfab88f8b586abda0/bert_layers.py:126: UserWarning: Unable to import Triton; defaulting MosaicBERT attention implementation to pytorch (this will reduce throughput when using this model).
+  warnings.warn(
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at zhihan1996/DNABERT-2-117M and are newly initialized: ['classifier.bias', 'bert.pooler.dense.weight', 'classifier.weight', 'bert.pooler.dense.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading sequences...
+High: 500, Low: 500
+Train: 800, Test: 200
+Loading tokenizer...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/100, loss: 0.6562
+Epoch 1, batch 20/100, loss: 0.6198
+Epoch 1, batch 30/100, loss: 0.5548
+Epoch 1, batch 40/100, loss: 0.5733
+Epoch 1, batch 50/100, loss: 0.5952
+Epoch 1, batch 60/100, loss: 0.5729
+Epoch 1, batch 70/100, loss: 0.4702
+Epoch 1, batch 80/100, loss: 0.4287
+Epoch 1, batch 90/100, loss: 0.4940
+Epoch 1, batch 100/100, loss: 0.2489
+Epoch 1 complete. Avg loss: 0.5390
+Epoch 2, batch 10/100, loss: 0.5322
+Epoch 2, batch 20/100, loss: 0.2462
+Epoch 2, batch 30/100, loss: 0.4381
+Epoch 2, batch 40/100, loss: 0.3192
+Epoch 2, batch 50/100, loss: 0.6113
+Epoch 2, batch 60/100, loss: 0.6066
+Epoch 2, batch 70/100, loss: 0.6146
+Epoch 2, batch 80/100, loss: 0.3160
+Epoch 2, batch 90/100, loss: 0.3575
+Epoch 2, batch 100/100, loss: 0.1035
+Epoch 2 complete. Avg loss: 0.3412
+Epoch 3, batch 10/100, loss: 0.1911
+Epoch 3, batch 20/100, loss: 0.4889
+Epoch 3, batch 30/100, loss: 0.2247
+Epoch 3, batch 40/100, loss: 0.2584
+Epoch 3, batch 50/100, loss: 0.0534
+Epoch 3, batch 60/100, loss: 0.2525
+Epoch 3, batch 70/100, loss: 0.1658
+Epoch 3, batch 80/100, loss: 0.0716
+Epoch 3, batch 90/100, loss: 0.1013
+Epoch 3, batch 100/100, loss: 0.0918
+Epoch 3 complete. Avg loss: 0.1995
+
+Evaluating...
+
+AUC Score: 0.8820
+FINAL_RESULT seed=123 auc=0.8820
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/huggingface_hub/file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/Users/maxwellkim/.cache/huggingface/modules/transformers_modules/zhihan1996/DNABERT-2-117M/7bce263b15377fc15361f52cfab88f8b586abda0/bert_layers.py:126: UserWarning: Unable to import Triton; defaulting MosaicBERT attention implementation to pytorch (this will reduce throughput when using this model).
+  warnings.warn(
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at zhihan1996/DNABERT-2-117M and are newly initialized: ['bert.pooler.dense.bias', 'bert.pooler.dense.weight', 'classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading sequences...
+High: 483, Low: 483
+Train: 772, Test: 194
+Loading tokenizer...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/97, loss: 0.6388
+Epoch 1, batch 20/97, loss: 0.7029
+Epoch 1, batch 30/97, loss: 0.6471
+Epoch 1, batch 40/97, loss: 0.4536
+Epoch 1, batch 50/97, loss: 0.3498
+Epoch 1, batch 60/97, loss: 0.3049
+Epoch 1, batch 70/97, loss: 0.2337
+Epoch 1, batch 80/97, loss: 0.4098
+Epoch 1, batch 90/97, loss: 0.2150
+Epoch 1 complete. Avg loss: 0.5006
+Epoch 2, batch 10/97, loss: 0.1055
+Epoch 2, batch 20/97, loss: 0.5874
+Epoch 2, batch 30/97, loss: 0.8126
+Epoch 2, batch 40/97, loss: 0.1536
+Epoch 2, batch 50/97, loss: 0.1969
+Epoch 2, batch 60/97, loss: 0.3155
+Epoch 2, batch 70/97, loss: 0.2641
+Epoch 2, batch 80/97, loss: 0.2827
+Epoch 2, batch 90/97, loss: 0.2822
+Epoch 2 complete. Avg loss: 0.2952
+Epoch 3, batch 10/97, loss: 0.1371
+Epoch 3, batch 20/97, loss: 0.1565
+Epoch 3, batch 30/97, loss: 0.0366
+Epoch 3, batch 40/97, loss: 0.0425
+Epoch 3, batch 50/97, loss: 0.0526
+Epoch 3, batch 60/97, loss: 0.0357
+Epoch 3, batch 70/97, loss: 0.0505
+Epoch 3, batch 80/97, loss: 0.1072
+Epoch 3, batch 90/97, loss: 0.0681
+Epoch 3 complete. Avg loss: 0.1643
+
+Evaluating...
+
+AUC Score: 0.9372
+FINAL_RESULT seed=0 auc=0.9372
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/huggingface_hub/file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/Users/maxwellkim/.cache/huggingface/modules/transformers_modules/zhihan1996/DNABERT-2-117M/7bce263b15377fc15361f52cfab88f8b586abda0/bert_layers.py:126: UserWarning: Unable to import Triton; defaulting MosaicBERT attention implementation to pytorch (this will reduce throughput when using this model).
+  warnings.warn(
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at zhihan1996/DNABERT-2-117M and are newly initialized: ['classifier.bias', 'classifier.weight', 'bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading sequences...
+High: 483, Low: 483
+Train: 772, Test: 194
+Loading tokenizer...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/97, loss: 0.6142
+Epoch 1, batch 20/97, loss: 0.6112
+Epoch 1, batch 30/97, loss: 0.6028
+Epoch 1, batch 40/97, loss: 0.7571
+Epoch 1, batch 50/97, loss: 0.2442
+Epoch 1, batch 60/97, loss: 0.6659
+Epoch 1, batch 70/97, loss: 0.5268
+Epoch 1, batch 80/97, loss: 0.2310
+Epoch 1, batch 90/97, loss: 0.4183
+Epoch 1 complete. Avg loss: 0.5026
+Epoch 2, batch 10/97, loss: 0.1958
+Epoch 2, batch 20/97, loss: 0.2472
+Epoch 2, batch 30/97, loss: 0.2478
+Epoch 2, batch 40/97, loss: 0.3664
+Epoch 2, batch 50/97, loss: 0.4155
+Epoch 2, batch 60/97, loss: 0.1067
+Epoch 2, batch 70/97, loss: 0.0706
+Epoch 2, batch 80/97, loss: 0.0986
+Epoch 2, batch 90/97, loss: 0.1690
+Epoch 2 complete. Avg loss: 0.3022
+Epoch 3, batch 10/97, loss: 0.2279
+Epoch 3, batch 20/97, loss: 0.0632
+Epoch 3, batch 30/97, loss: 0.0589
+Epoch 3, batch 40/97, loss: 0.5328
+Epoch 3, batch 50/97, loss: 0.4323
+Epoch 3, batch 60/97, loss: 0.1952
+Epoch 3, batch 70/97, loss: 0.1166
+Epoch 3, batch 80/97, loss: 0.4071
+Epoch 3, batch 90/97, loss: 0.3653
+Epoch 3 complete. Avg loss: 0.2409
+
+Evaluating...
+
+AUC Score: 0.9073
+FINAL_RESULT seed=42 auc=0.9073
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/huggingface_hub/file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/Users/maxwellkim/.cache/huggingface/modules/transformers_modules/zhihan1996/DNABERT-2-117M/7bce263b15377fc15361f52cfab88f8b586abda0/bert_layers.py:126: UserWarning: Unable to import Triton; defaulting MosaicBERT attention implementation to pytorch (this will reduce throughput when using this model).
+  warnings.warn(
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at zhihan1996/DNABERT-2-117M and are newly initialized: ['classifier.weight', 'classifier.bias', 'bert.pooler.dense.bias', 'bert.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading sequences...
+High: 483, Low: 483
+Train: 772, Test: 194
+Loading tokenizer...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/97, loss: 0.5768
+Epoch 1, batch 20/97, loss: 0.7300
+Epoch 1, batch 30/97, loss: 0.5468
+Epoch 1, batch 40/97, loss: 0.3132
+Epoch 1, batch 50/97, loss: 0.4586
+Epoch 1, batch 60/97, loss: 0.6086
+Epoch 1, batch 70/97, loss: 0.3721
+Epoch 1, batch 80/97, loss: 0.3154
+Epoch 1, batch 90/97, loss: 0.6407
+Epoch 1 complete. Avg loss: 0.5051
+Epoch 2, batch 10/97, loss: 0.2196
+Epoch 2, batch 20/97, loss: 0.1464
+Epoch 2, batch 30/97, loss: 0.1169
+Epoch 2, batch 40/97, loss: 0.1491
+Epoch 2, batch 50/97, loss: 0.4455
+Epoch 2, batch 60/97, loss: 0.0853
+Epoch 2, batch 70/97, loss: 0.5136
+Epoch 2, batch 80/97, loss: 0.1297
+Epoch 2, batch 90/97, loss: 0.4719
+Epoch 2 complete. Avg loss: 0.3462
+Epoch 3, batch 10/97, loss: 0.1627
+Epoch 3, batch 20/97, loss: 0.0860
+Epoch 3, batch 30/97, loss: 0.2913
+Epoch 3, batch 40/97, loss: 0.2361
+Epoch 3, batch 50/97, loss: 0.3568
+Epoch 3, batch 60/97, loss: 0.2517
+Epoch 3, batch 70/97, loss: 0.1114
+Epoch 3, batch 80/97, loss: 0.2490
+Epoch 3, batch 90/97, loss: 0.2062
+Epoch 3 complete. Avg loss: 0.2310
+
+Evaluating...
+
+AUC Score: 0.9257
+FINAL_RESULT seed=123 auc=0.9257
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/huggingface_hub/file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/Users/maxwellkim/.cache/huggingface/modules/transformers_modules/zhihan1996/DNABERT-2-117M/7bce263b15377fc15361f52cfab88f8b586abda0/bert_layers.py:126: UserWarning: Unable to import Triton; defaulting MosaicBERT attention implementation to pytorch (this will reduce throughput when using this model).
+  warnings.warn(
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at zhihan1996/DNABERT-2-117M and are newly initialized: ['bert.pooler.dense.bias', 'classifier.bias', 'bert.pooler.dense.weight', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading sequences...
+High: 500, Low: 500
+Train: 800, Test: 200
+Loading tokenizer...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/100, loss: 0.6787
+Epoch 1, batch 20/100, loss: 0.5842
+Epoch 1, batch 30/100, loss: 0.6154
+Epoch 1, batch 40/100, loss: 0.5870
+Epoch 1, batch 50/100, loss: 0.3927
+Epoch 1, batch 60/100, loss: 0.4316
+Epoch 1, batch 70/100, loss: 0.4324
+Epoch 1, batch 80/100, loss: 0.5949
+Epoch 1, batch 90/100, loss: 0.3775
+Epoch 1, batch 100/100, loss: 0.3375
+Epoch 1 complete. Avg loss: 0.5460
+Epoch 2, batch 10/100, loss: 0.3513
+Epoch 2, batch 20/100, loss: 0.3186
+Epoch 2, batch 30/100, loss: 0.3707
+Epoch 2, batch 40/100, loss: 0.5260
+Epoch 2, batch 50/100, loss: 0.4530
+Epoch 2, batch 60/100, loss: 0.1046
+Epoch 2, batch 70/100, loss: 0.1345
+Epoch 2, batch 80/100, loss: 0.0803
+Epoch 2, batch 90/100, loss: 0.0909
+Epoch 2, batch 100/100, loss: 0.2480
+Epoch 2 complete. Avg loss: 0.3637
+Epoch 3, batch 10/100, loss: 0.1945
+Epoch 3, batch 20/100, loss: 0.3110
+Epoch 3, batch 30/100, loss: 0.2703
+Epoch 3, batch 40/100, loss: 0.2246
+Epoch 3, batch 50/100, loss: 0.0857
+Epoch 3, batch 60/100, loss: 0.2473
+Epoch 3, batch 70/100, loss: 0.1951
+Epoch 3, batch 80/100, loss: 0.2245
+Epoch 3, batch 90/100, loss: 0.0642
+Epoch 3, batch 100/100, loss: 0.2774
+Epoch 3 complete. Avg loss: 0.2442
+
+Evaluating...
+
+AUC Score: 0.9289
+FINAL_RESULT seed=0 auc=0.9289
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/huggingface_hub/file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/Users/maxwellkim/.cache/huggingface/modules/transformers_modules/zhihan1996/DNABERT-2-117M/7bce263b15377fc15361f52cfab88f8b586abda0/bert_layers.py:126: UserWarning: Unable to import Triton; defaulting MosaicBERT attention implementation to pytorch (this will reduce throughput when using this model).
+  warnings.warn(
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at zhihan1996/DNABERT-2-117M and are newly initialized: ['classifier.bias', 'classifier.weight', 'bert.pooler.dense.bias', 'bert.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading sequences...
+High: 500, Low: 500
+Train: 800, Test: 200
+Loading tokenizer...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/100, loss: 0.6749
+Epoch 1, batch 20/100, loss: 0.6624
+Epoch 1, batch 30/100, loss: 0.5563
+Epoch 1, batch 40/100, loss: 0.5560
+Epoch 1, batch 50/100, loss: 0.5991
+Epoch 1, batch 60/100, loss: 0.4219
+Epoch 1, batch 70/100, loss: 0.4154
+Epoch 1, batch 80/100, loss: 0.2674
+Epoch 1, batch 90/100, loss: 0.2222
+Epoch 1, batch 100/100, loss: 0.7404
+Epoch 1 complete. Avg loss: 0.5510
+Epoch 2, batch 10/100, loss: 0.2503
+Epoch 2, batch 20/100, loss: 0.3135
+Epoch 2, batch 30/100, loss: 0.2512
+Epoch 2, batch 40/100, loss: 0.4205
+Epoch 2, batch 50/100, loss: 0.1580
+Epoch 2, batch 60/100, loss: 0.2072
+Epoch 2, batch 70/100, loss: 0.1468
+Epoch 2, batch 80/100, loss: 0.2843
+Epoch 2, batch 90/100, loss: 0.2523
+Epoch 2, batch 100/100, loss: 0.6507
+Epoch 2 complete. Avg loss: 0.3910
+Epoch 3, batch 10/100, loss: 0.1448
+Epoch 3, batch 20/100, loss: 0.2119
+Epoch 3, batch 30/100, loss: 0.1351
+Epoch 3, batch 40/100, loss: 0.4517
+Epoch 3, batch 50/100, loss: 0.1743
+Epoch 3, batch 60/100, loss: 0.1674
+Epoch 3, batch 70/100, loss: 0.1536
+Epoch 3, batch 80/100, loss: 0.1251
+Epoch 3, batch 90/100, loss: 0.0493
+Epoch 3, batch 100/100, loss: 0.5121
+Epoch 3 complete. Avg loss: 0.2488
+
+Evaluating...
+
+AUC Score: 0.9403
+FINAL_RESULT seed=42 auc=0.9403
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/huggingface_hub/file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/Users/maxwellkim/.cache/huggingface/modules/transformers_modules/zhihan1996/DNABERT-2-117M/7bce263b15377fc15361f52cfab88f8b586abda0/bert_layers.py:126: UserWarning: Unable to import Triton; defaulting MosaicBERT attention implementation to pytorch (this will reduce throughput when using this model).
+  warnings.warn(
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at zhihan1996/DNABERT-2-117M and are newly initialized: ['classifier.bias', 'classifier.weight', 'bert.pooler.dense.bias', 'bert.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading sequences...
+High: 500, Low: 500
+Train: 800, Test: 200
+Loading tokenizer...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/100, loss: 0.6822
+Epoch 1, batch 20/100, loss: 0.6693
+Epoch 1, batch 30/100, loss: 0.5778
+Epoch 1, batch 40/100, loss: 0.5778
+Epoch 1, batch 50/100, loss: 0.3996
+Epoch 1, batch 60/100, loss: 0.3656
+Epoch 1, batch 70/100, loss: 0.8165
+Epoch 1, batch 80/100, loss: 0.5457
+Epoch 1, batch 90/100, loss: 0.8756
+Epoch 1, batch 100/100, loss: 0.3194
+Epoch 1 complete. Avg loss: 0.5529
+Epoch 2, batch 10/100, loss: 0.5610
+Epoch 2, batch 20/100, loss: 0.6423
+Epoch 2, batch 30/100, loss: 0.2160
+Epoch 2, batch 40/100, loss: 0.2724
+Epoch 2, batch 50/100, loss: 0.1977
+Epoch 2, batch 60/100, loss: 0.6591
+Epoch 2, batch 70/100, loss: 0.2637
+Epoch 2, batch 80/100, loss: 0.2429
+Epoch 2, batch 90/100, loss: 0.3694
+Epoch 2, batch 100/100, loss: 0.1759
+Epoch 2 complete. Avg loss: 0.3488
+Epoch 3, batch 10/100, loss: 0.1972
+Epoch 3, batch 20/100, loss: 0.2446
+Epoch 3, batch 30/100, loss: 0.0853
+Epoch 3, batch 40/100, loss: 0.0609
+Epoch 3, batch 50/100, loss: 0.0527
+Epoch 3, batch 60/100, loss: 0.0529
+Epoch 3, batch 70/100, loss: 0.0382
+Epoch 3, batch 80/100, loss: 0.4281
+Epoch 3, batch 90/100, loss: 0.0790
+Epoch 3, batch 100/100, loss: 0.1066
+Epoch 3 complete. Avg loss: 0.2136
+
+Evaluating...
+
+AUC Score: 0.8980
+FINAL_RESULT seed=123 auc=0.8980

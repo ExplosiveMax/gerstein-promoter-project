@@ -1,0 +1,46 @@
+Loading sequences...
+High: 500, Low: 500
+Train: 800, Test: 200
+Loading tokenizer...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/100, loss: 0.6822
+Epoch 1, batch 20/100, loss: 0.6693
+Epoch 1, batch 30/100, loss: 0.5778
+Epoch 1, batch 40/100, loss: 0.5778
+Epoch 1, batch 50/100, loss: 0.3996
+Epoch 1, batch 60/100, loss: 0.3656
+Epoch 1, batch 70/100, loss: 0.8165
+Epoch 1, batch 80/100, loss: 0.5457
+Epoch 1, batch 90/100, loss: 0.8756
+Epoch 1, batch 100/100, loss: 0.3194
+Epoch 1 complete. Avg loss: 0.5529
+Epoch 2, batch 10/100, loss: 0.5610
+Epoch 2, batch 20/100, loss: 0.6423
+Epoch 2, batch 30/100, loss: 0.2160
+Epoch 2, batch 40/100, loss: 0.2724
+Epoch 2, batch 50/100, loss: 0.1977
+Epoch 2, batch 60/100, loss: 0.6591
+Epoch 2, batch 70/100, loss: 0.2637
+Epoch 2, batch 80/100, loss: 0.2429
+Epoch 2, batch 90/100, loss: 0.3694
+Epoch 2, batch 100/100, loss: 0.1759
+Epoch 2 complete. Avg loss: 0.3488
+Epoch 3, batch 10/100, loss: 0.1972
+Epoch 3, batch 20/100, loss: 0.2446
+Epoch 3, batch 30/100, loss: 0.0853
+Epoch 3, batch 40/100, loss: 0.0609
+Epoch 3, batch 50/100, loss: 0.0527
+Epoch 3, batch 60/100, loss: 0.0529
+Epoch 3, batch 70/100, loss: 0.0382
+Epoch 3, batch 80/100, loss: 0.4281
+Epoch 3, batch 90/100, loss: 0.0790
+Epoch 3, batch 100/100, loss: 0.1066
+Epoch 3 complete. Avg loss: 0.2136
+
+Evaluating...
+
+AUC Score: 0.8980
+FINAL_RESULT seed=123 auc=0.8980
