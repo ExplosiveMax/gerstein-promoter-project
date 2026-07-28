@@ -1,0 +1,29 @@
+Loading sequences...
+High: 243, Low: 243
+Train: 388, Test: 98
+Loading tokenizer...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/49, loss: 0.6744
+Epoch 1, batch 20/49, loss: 0.7310
+Epoch 1, batch 30/49, loss: 0.6781
+Epoch 1, batch 40/49, loss: 0.6570
+Epoch 1 complete. Avg loss: 0.6720
+Epoch 2, batch 10/49, loss: 0.6540
+Epoch 2, batch 20/49, loss: 0.4682
+Epoch 2, batch 30/49, loss: 0.3135
+Epoch 2, batch 40/49, loss: 0.4071
+Epoch 2 complete. Avg loss: 0.4774
+Epoch 3, batch 10/49, loss: 0.4718
+Epoch 3, batch 20/49, loss: 0.3340
+Epoch 3, batch 30/49, loss: 0.3752
+Epoch 3, batch 40/49, loss: 0.2665
+Epoch 3 complete. Avg loss: 0.2708
+Saving model...
+
+Evaluating...
+
+AUC Score: 0.8476
+FINAL_RESULT seed=42 auc=0.8476
