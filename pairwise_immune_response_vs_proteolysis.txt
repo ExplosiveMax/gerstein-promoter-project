@@ -1,0 +1,5 @@
+immune_response vs proteolysis: 186 each
+Epoch 1 done
+Epoch 2 done
+Epoch 3 done
+FINAL_PAIR immune_response_vs_proteolysis seed=42 auc=0.6615
