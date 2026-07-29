@@ -1,0 +1,5 @@
+gpcr_signaling vs transmembrane_transport: 231 each
+Epoch 1 done
+Epoch 2 done
+Epoch 3 done
+FINAL_PAIR gpcr_signaling_vs_transmembrane_transport seed=0 auc=0.8548

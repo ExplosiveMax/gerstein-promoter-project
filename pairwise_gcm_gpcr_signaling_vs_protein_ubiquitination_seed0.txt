@@ -1,0 +1,5 @@
+gpcr_signaling vs protein_ubiquitination: 137 each
+Epoch 1 done
+Epoch 2 done
+Epoch 3 done
+FINAL_PAIR gpcr_signaling_vs_protein_ubiquitination seed=0 auc=0.7646
