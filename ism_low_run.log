@@ -1,0 +1,82 @@
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/huggingface_hub/file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/Users/maxwellkim/.cache/huggingface/modules/transformers_modules/zhihan1996/DNABERT-2-117M/7bce263b15377fc15361f52cfab88f8b586abda0/bert_layers.py:126: UserWarning: Unable to import Triton; defaulting MosaicBERT attention implementation to pytorch (this will reduce throughput when using this model).
+  warnings.warn(
+Loading model...
+Loading 5 sequences from onoff_Liver_low.fasta...
+
+=== Sequence 0 (len=1000) ===
+Baseline P(high): 0.6155
+Top 10 most important positions (by avg |delta|):
+  pos    0  base=T  importance=0.0280
+  pos    2  base=A  importance=0.0364
+  pos    3  base=A  importance=0.0307
+  pos    4  base=A  importance=0.0186
+  pos    8  base=G  importance=0.0167
+  pos   11  base=T  importance=0.0339
+  pos   14  base=A  importance=0.0176
+  pos   22  base=A  importance=0.0226
+  pos   25  base=A  importance=0.0160
+  pos   29  base=A  importance=0.0198
+
+=== Sequence 1 (len=1000) ===
+Baseline P(high): 0.5565
+Top 10 most important positions (by avg |delta|):
+  pos   57  base=C  importance=0.0945
+  pos  143  base=G  importance=0.1085
+  pos  284  base=C  importance=0.0955
+  pos  409  base=C  importance=0.0965
+  pos  412  base=T  importance=0.0837
+  pos  415  base=T  importance=0.1174
+  pos  499  base=A  importance=0.0908
+  pos  749  base=T  importance=0.0986
+  pos  832  base=G  importance=0.0865
+  pos  849  base=A  importance=0.0844
+
+=== Sequence 2 (len=1000) ===
+Baseline P(high): 0.2294
+Top 10 most important positions (by avg |delta|):
+  pos    2  base=C  importance=0.0732
+  pos  880  base=T  importance=0.1043
+  pos  887  base=T  importance=0.0803
+  pos  927  base=T  importance=0.0786
+  pos  930  base=T  importance=0.1036
+  pos  939  base=A  importance=0.0792
+  pos  942  base=A  importance=0.1142
+  pos  947  base=T  importance=0.0983
+  pos  951  base=A  importance=0.0809
+  pos  953  base=T  importance=0.0739
+
+=== Sequence 3 (len=1000) ===
+Baseline P(high): 0.4828
+Top 10 most important positions (by avg |delta|):
+  pos    0  base=G  importance=0.0456
+  pos    1  base=T  importance=0.0294
+  pos    2  base=C  importance=0.0288
+  pos    3  base=A  importance=0.0375
+  pos    4  base=G  importance=0.0202
+  pos   14  base=A  importance=0.0300
+  pos   15  base=A  importance=0.0286
+  pos   25  base=T  importance=0.0266
+  pos   43  base=A  importance=0.0212
+  pos   64  base=A  importance=0.0232
+
+=== Sequence 4 (len=1000) ===
+Baseline P(high): 0.1237
+Top 10 most important positions (by avg |delta|):
+  pos    0  base=A  importance=0.0276
+  pos    1  base=A  importance=0.0100
+  pos    2  base=G  importance=0.0044
+  pos    3  base=G  importance=0.0050
+  pos    7  base=A  importance=0.0055
+  pos   13  base=C  importance=0.0027
+  pos   14  base=C  importance=0.0039
+  pos   16  base=T  importance=0.0031
+  pos   28  base=T  importance=0.0031
+  pos   45  base=A  importance=0.0033
+
+Saved per-position importance arrays as ism_importance_seq*.npy
