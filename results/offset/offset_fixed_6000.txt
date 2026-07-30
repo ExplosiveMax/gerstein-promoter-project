@@ -1,0 +1,40 @@
+Loading sequences...
+Random seed: 42
+Promoters: 351, Random: 351
+Train: 561, Test: 141
+Loading tokenizer...
+Tokenizing...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/71, loss: 0.6624
+Epoch 1, batch 20/71, loss: 0.6734
+Epoch 1, batch 30/71, loss: 0.6559
+Epoch 1, batch 40/71, loss: 0.5783
+Epoch 1, batch 50/71, loss: 0.5894
+Epoch 1, batch 60/71, loss: 0.6045
+Epoch 1, batch 70/71, loss: 0.5506
+Epoch 1 complete. Avg loss: 0.6089
+Epoch 2, batch 10/71, loss: 0.5024
+Epoch 2, batch 20/71, loss: 0.4731
+Epoch 2, batch 30/71, loss: 0.5023
+Epoch 2, batch 40/71, loss: 0.2745
+Epoch 2, batch 50/71, loss: 0.2378
+Epoch 2, batch 60/71, loss: 0.3392
+Epoch 2, batch 70/71, loss: 0.3562
+Epoch 2 complete. Avg loss: 0.4475
+Epoch 3, batch 10/71, loss: 0.5014
+Epoch 3, batch 20/71, loss: 0.1939
+Epoch 3, batch 30/71, loss: 0.2661
+Epoch 3, batch 40/71, loss: 0.2637
+Epoch 3, batch 50/71, loss: 0.2655
+Epoch 3, batch 60/71, loss: 0.2757
+Epoch 3, batch 70/71, loss: 0.3033
+Epoch 3 complete. Avg loss: 0.2911
+
+Evaluating...
+
+AUC Score: 0.8109
+FINAL_RESULT seed=42 auc=0.8109
+0.5 = random chance, higher = model can distinguish promoters from random DNA

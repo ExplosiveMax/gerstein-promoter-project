@@ -95,6 +95,10 @@ for epoch in range(3):
             print(f"Epoch {epoch+1}, batch {i+1}/{len(train_loader)}, loss: {loss.item():.4f}")
     print(f"Epoch {epoch+1} complete. Avg loss: {total/len(train_loader):.4f}")
 
+print("Saving model...")
+model.save_pretrained(f"onoff_liver_model_seed{seed}")
+tokenizer.save_pretrained(f"onoff_liver_model_seed{seed}")
+
 print("\nEvaluating...")
 model.eval()
 all_probs, all_labels = [], []

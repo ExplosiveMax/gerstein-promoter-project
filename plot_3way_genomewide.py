@@ -1,4 +1,4 @@
-import re, glob
+import os, re, glob
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -48,5 +48,6 @@ plt.ylim(0.5, 1.0)
 plt.legend(fontsize=8)
 for xi, m in zip(x + w/2, gw_means):
     plt.text(xi, m + 0.01, f"{m:.3f}", ha="center", fontsize=9)
-plt.savefig("plot_3way_genomewide_auc.png", dpi=150, bbox_inches="tight")
-print("Saved plot_3way_genomewide_auc.png")
+os.makedirs("results/plots", exist_ok=True)
+plt.savefig("results/plots/plot_3way_genomewide_auc.png", dpi=150, bbox_inches="tight")
+print("Saved results/plots/plot_3way_genomewide_auc.png")

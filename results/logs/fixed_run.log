@@ -1,0 +1,305 @@
+Wrote 351 regions at offset 0
+Loading chr22...
+chr22 length: 50818468
+Matching 351 positives from promoters.bed
+Found 339 GC-matched (per-sequence, ±0.1), non-genic regions
+Failed to place: 12
+WARNING: 12 positives could not get a matched negative — chr22 may be too gene-dense/repeat-heavy at this GC target
+Saved to random_regions.bed with window size 500
+/Users/maxwellkim/.cache/huggingface/modules/transformers_modules/zhihan1996/DNABERT_hyphen_2_hyphen_117M/7bce263b15377fc15361f52cfab88f8b586abda0/bert_layers.py:126: UserWarning: Unable to import Triton; defaulting MosaicBERT attention implementation to pytorch (this will reduce throughput when using this model).
+  warnings.warn(
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at zhihan1996/DNABERT-2-117M and are newly initialized: ['bert.pooler.dense.bias', 'bert.pooler.dense.weight', 'classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading sequences...
+Random seed: 42
+Promoters: 351, Random: 339
+Train: 552, Test: 138
+Loading tokenizer...
+Tokenizing...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/69, loss: 0.6904
+Epoch 1, batch 20/69, loss: 0.6843
+Epoch 1, batch 30/69, loss: 0.6745
+Epoch 1, batch 40/69, loss: 0.7297
+Epoch 1, batch 50/69, loss: 0.6110
+Epoch 1, batch 60/69, loss: 0.7233
+Epoch 1 complete. Avg loss: 0.6645
+Epoch 2, batch 10/69, loss: 0.5941
+Epoch 2, batch 20/69, loss: 0.6977
+Epoch 2, batch 30/69, loss: 0.5719
+Epoch 2, batch 40/69, loss: 0.9068
+Epoch 2, batch 50/69, loss: 0.5602
+Epoch 2, batch 60/69, loss: 0.3341
+Epoch 2 complete. Avg loss: 0.5962
+Epoch 3, batch 10/69, loss: 0.3895
+Epoch 3, batch 20/69, loss: 0.7350
+Epoch 3, batch 30/69, loss: 0.4682
+Epoch 3, batch 40/69, loss: 0.6201
+Epoch 3, batch 50/69, loss: 0.4878
+Epoch 3, batch 60/69, loss: 0.4736
+Epoch 3 complete. Avg loss: 0.5321
+
+Evaluating...
+
+AUC Score: 0.7716
+FINAL_RESULT seed=42 auc=0.7716
+0.5 = random chance, higher = model can distinguish promoters from random DNA
+Wrote 351 regions at offset 2000
+Loading chr22...
+chr22 length: 50818468
+Matching 351 positives from promoters.bed
+Found 351 GC-matched (per-sequence, ±0.1), non-genic regions
+Failed to place: 0
+Saved to random_regions.bed with window size 500
+/Users/maxwellkim/.cache/huggingface/modules/transformers_modules/zhihan1996/DNABERT_hyphen_2_hyphen_117M/7bce263b15377fc15361f52cfab88f8b586abda0/bert_layers.py:126: UserWarning: Unable to import Triton; defaulting MosaicBERT attention implementation to pytorch (this will reduce throughput when using this model).
+  warnings.warn(
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at zhihan1996/DNABERT-2-117M and are newly initialized: ['bert.pooler.dense.bias', 'bert.pooler.dense.weight', 'classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading sequences...
+Random seed: 42
+Promoters: 351, Random: 351
+Train: 561, Test: 141
+Loading tokenizer...
+Tokenizing...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/71, loss: 0.6710
+Epoch 1, batch 20/71, loss: 0.6389
+Epoch 1, batch 30/71, loss: 0.6530
+Epoch 1, batch 40/71, loss: 0.6650
+Epoch 1, batch 50/71, loss: 0.6050
+Epoch 1, batch 60/71, loss: 0.6148
+Epoch 1, batch 70/71, loss: 0.5902
+Epoch 1 complete. Avg loss: 0.6191
+Epoch 2, batch 10/71, loss: 0.5594
+Epoch 2, batch 20/71, loss: 0.3622
+Epoch 2, batch 30/71, loss: 0.5120
+Epoch 2, batch 40/71, loss: 0.4240
+Epoch 2, batch 50/71, loss: 0.4118
+Epoch 2, batch 60/71, loss: 0.4716
+Epoch 2, batch 70/71, loss: 0.6255
+Epoch 2 complete. Avg loss: 0.4787
+Epoch 3, batch 10/71, loss: 0.3102
+Epoch 3, batch 20/71, loss: 0.1682
+Epoch 3, batch 30/71, loss: 0.5717
+Epoch 3, batch 40/71, loss: 0.4871
+Epoch 3, batch 50/71, loss: 0.2243
+Epoch 3, batch 60/71, loss: 0.4446
+Epoch 3, batch 70/71, loss: 0.5237
+Epoch 3 complete. Avg loss: 0.3700
+
+Evaluating...
+
+AUC Score: 0.8537
+FINAL_RESULT seed=42 auc=0.8537
+0.5 = random chance, higher = model can distinguish promoters from random DNA
+Wrote 351 regions at offset 4000
+Loading chr22...
+chr22 length: 50818468
+Matching 351 positives from promoters.bed
+Found 351 GC-matched (per-sequence, ±0.1), non-genic regions
+Failed to place: 0
+Saved to random_regions.bed with window size 500
+/Users/maxwellkim/.cache/huggingface/modules/transformers_modules/zhihan1996/DNABERT_hyphen_2_hyphen_117M/7bce263b15377fc15361f52cfab88f8b586abda0/bert_layers.py:126: UserWarning: Unable to import Triton; defaulting MosaicBERT attention implementation to pytorch (this will reduce throughput when using this model).
+  warnings.warn(
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at zhihan1996/DNABERT-2-117M and are newly initialized: ['bert.pooler.dense.bias', 'bert.pooler.dense.weight', 'classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading sequences...
+Random seed: 42
+Promoters: 351, Random: 351
+Train: 561, Test: 141
+Loading tokenizer...
+Tokenizing...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/71, loss: 0.6703
+Epoch 1, batch 20/71, loss: 0.6125
+Epoch 1, batch 30/71, loss: 0.6601
+Epoch 1, batch 40/71, loss: 0.6326
+Epoch 1, batch 50/71, loss: 0.5592
+Epoch 1, batch 60/71, loss: 0.6094
+Epoch 1, batch 70/71, loss: 0.6583
+Epoch 1 complete. Avg loss: 0.6133
+Epoch 2, batch 10/71, loss: 0.4932
+Epoch 2, batch 20/71, loss: 0.3998
+Epoch 2, batch 30/71, loss: 0.5272
+Epoch 2, batch 40/71, loss: 0.1654
+Epoch 2, batch 50/71, loss: 0.2732
+Epoch 2, batch 60/71, loss: 0.4358
+Epoch 2, batch 70/71, loss: 0.6724
+Epoch 2 complete. Avg loss: 0.4219
+Epoch 3, batch 10/71, loss: 0.2843
+Epoch 3, batch 20/71, loss: 0.1747
+Epoch 3, batch 30/71, loss: 0.2401
+Epoch 3, batch 40/71, loss: 0.1837
+Epoch 3, batch 50/71, loss: 0.3365
+Epoch 3, batch 60/71, loss: 0.4418
+Epoch 3, batch 70/71, loss: 0.3109
+Epoch 3 complete. Avg loss: 0.2433
+
+Evaluating...
+
+AUC Score: 0.8167
+FINAL_RESULT seed=42 auc=0.8167
+0.5 = random chance, higher = model can distinguish promoters from random DNA
+Wrote 351 regions at offset 6000
+Loading chr22...
+chr22 length: 50818468
+Matching 351 positives from promoters.bed
+Found 351 GC-matched (per-sequence, ±0.1), non-genic regions
+Failed to place: 0
+Saved to random_regions.bed with window size 500
+/Users/maxwellkim/.cache/huggingface/modules/transformers_modules/zhihan1996/DNABERT_hyphen_2_hyphen_117M/7bce263b15377fc15361f52cfab88f8b586abda0/bert_layers.py:126: UserWarning: Unable to import Triton; defaulting MosaicBERT attention implementation to pytorch (this will reduce throughput when using this model).
+  warnings.warn(
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at zhihan1996/DNABERT-2-117M and are newly initialized: ['bert.pooler.dense.bias', 'bert.pooler.dense.weight', 'classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading sequences...
+Random seed: 42
+Promoters: 351, Random: 351
+Train: 561, Test: 141
+Loading tokenizer...
+Tokenizing...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/71, loss: 0.6624
+Epoch 1, batch 20/71, loss: 0.6734
+Epoch 1, batch 30/71, loss: 0.6559
+Epoch 1, batch 40/71, loss: 0.5783
+Epoch 1, batch 50/71, loss: 0.5894
+Epoch 1, batch 60/71, loss: 0.6045
+Epoch 1, batch 70/71, loss: 0.5506
+Epoch 1 complete. Avg loss: 0.6089
+Epoch 2, batch 10/71, loss: 0.5024
+Epoch 2, batch 20/71, loss: 0.4731
+Epoch 2, batch 30/71, loss: 0.5023
+Epoch 2, batch 40/71, loss: 0.2745
+Epoch 2, batch 50/71, loss: 0.2378
+Epoch 2, batch 60/71, loss: 0.3392
+Epoch 2, batch 70/71, loss: 0.3562
+Epoch 2 complete. Avg loss: 0.4475
+Epoch 3, batch 10/71, loss: 0.5014
+Epoch 3, batch 20/71, loss: 0.1939
+Epoch 3, batch 30/71, loss: 0.2661
+Epoch 3, batch 40/71, loss: 0.2637
+Epoch 3, batch 50/71, loss: 0.2655
+Epoch 3, batch 60/71, loss: 0.2757
+Epoch 3, batch 70/71, loss: 0.3033
+Epoch 3 complete. Avg loss: 0.2911
+
+Evaluating...
+
+AUC Score: 0.8109
+FINAL_RESULT seed=42 auc=0.8109
+0.5 = random chance, higher = model can distinguish promoters from random DNA
+Wrote 351 regions at offset 8000
+Loading chr22...
+chr22 length: 50818468
+Matching 351 positives from promoters.bed
+Found 351 GC-matched (per-sequence, ±0.1), non-genic regions
+Failed to place: 0
+Saved to random_regions.bed with window size 500
+/Users/maxwellkim/.cache/huggingface/modules/transformers_modules/zhihan1996/DNABERT_hyphen_2_hyphen_117M/7bce263b15377fc15361f52cfab88f8b586abda0/bert_layers.py:126: UserWarning: Unable to import Triton; defaulting MosaicBERT attention implementation to pytorch (this will reduce throughput when using this model).
+  warnings.warn(
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at zhihan1996/DNABERT-2-117M and are newly initialized: ['bert.pooler.dense.bias', 'bert.pooler.dense.weight', 'classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading sequences...
+Random seed: 42
+Promoters: 351, Random: 351
+Train: 561, Test: 141
+Loading tokenizer...
+Tokenizing...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/71, loss: 0.6175
+Epoch 1, batch 20/71, loss: 0.6812
+Epoch 1, batch 30/71, loss: 0.6390
+Epoch 1, batch 40/71, loss: 0.6407
+Epoch 1, batch 50/71, loss: 0.4508
+Epoch 1, batch 60/71, loss: 0.5828
+Epoch 1, batch 70/71, loss: 0.5777
+Epoch 1 complete. Avg loss: 0.6319
+Epoch 2, batch 10/71, loss: 0.5988
+Epoch 2, batch 20/71, loss: 0.3017
+Epoch 2, batch 30/71, loss: 0.4821
+Epoch 2, batch 40/71, loss: 0.3642
+Epoch 2, batch 50/71, loss: 0.2603
+Epoch 2, batch 60/71, loss: 0.4395
+Epoch 2, batch 70/71, loss: 0.3582
+Epoch 2 complete. Avg loss: 0.4684
+Epoch 3, batch 10/71, loss: 0.5338
+Epoch 3, batch 20/71, loss: 0.3111
+Epoch 3, batch 30/71, loss: 0.2402
+Epoch 3, batch 40/71, loss: 0.2671
+Epoch 3, batch 50/71, loss: 0.4593
+Epoch 3, batch 60/71, loss: 0.2004
+Epoch 3, batch 70/71, loss: 0.3747
+Epoch 3 complete. Avg loss: 0.3258
+
+Evaluating...
+
+AUC Score: 0.7753
+FINAL_RESULT seed=42 auc=0.7753
+0.5 = random chance, higher = model can distinguish promoters from random DNA
+Wrote 351 regions at offset 10000
+Loading chr22...
+chr22 length: 50818468
+Matching 351 positives from promoters.bed
+Found 350 GC-matched (per-sequence, ±0.1), non-genic regions
+Failed to place: 1
+WARNING: 1 positives could not get a matched negative — chr22 may be too gene-dense/repeat-heavy at this GC target
+Saved to random_regions.bed with window size 500
+/Users/maxwellkim/.cache/huggingface/modules/transformers_modules/zhihan1996/DNABERT_hyphen_2_hyphen_117M/7bce263b15377fc15361f52cfab88f8b586abda0/bert_layers.py:126: UserWarning: Unable to import Triton; defaulting MosaicBERT attention implementation to pytorch (this will reduce throughput when using this model).
+  warnings.warn(
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at zhihan1996/DNABERT-2-117M and are newly initialized: ['bert.pooler.dense.bias', 'bert.pooler.dense.weight', 'classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading sequences...
+Random seed: 42
+Promoters: 351, Random: 350
+Train: 560, Test: 141
+Loading tokenizer...
+Tokenizing...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/70, loss: 0.7120
+Epoch 1, batch 20/70, loss: 0.5938
+Epoch 1, batch 30/70, loss: 0.5795
+Epoch 1, batch 40/70, loss: 0.5521
+Epoch 1, batch 50/70, loss: 0.6715
+Epoch 1, batch 60/70, loss: 0.7668
+Epoch 1, batch 70/70, loss: 0.3927
+Epoch 1 complete. Avg loss: 0.5867
+Epoch 2, batch 10/70, loss: 0.2492
+Epoch 2, batch 20/70, loss: 0.5496
+Epoch 2, batch 30/70, loss: 0.5227
+Epoch 2, batch 40/70, loss: 0.4094
+Epoch 2, batch 50/70, loss: 0.5329
+Epoch 2, batch 60/70, loss: 0.4112
+Epoch 2, batch 70/70, loss: 0.1899
+Epoch 2 complete. Avg loss: 0.4036
+Epoch 3, batch 10/70, loss: 0.2731
+Epoch 3, batch 20/70, loss: 0.5140
+Epoch 3, batch 30/70, loss: 0.2309
+Epoch 3, batch 40/70, loss: 0.5168
+Epoch 3, batch 50/70, loss: 0.2901
+Epoch 3, batch 60/70, loss: 0.1128
+Epoch 3, batch 70/70, loss: 0.3572
+Epoch 3 complete. Avg loss: 0.2936
+
+Evaluating...
+
+AUC Score: 0.7342
+FINAL_RESULT seed=42 auc=0.7342
+0.5 = random chance, higher = model can distinguish promoters from random DNA

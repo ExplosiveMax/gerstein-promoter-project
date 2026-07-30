@@ -1,4 +1,4 @@
-import re, glob
+import os, re, glob
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -39,5 +39,6 @@ plt.ylim(0.5, 1.0)
 plt.legend()
 for b, m in zip(bars, means):
     plt.text(b.get_x()+b.get_width()/2, m+0.01, f"{m:.3f}", ha="center", fontsize=10)
-plt.savefig("plot_3way_auc.png", dpi=150, bbox_inches="tight")
-print("Saved plot_3way_auc.png")
+os.makedirs("results/plots", exist_ok=True)
+plt.savefig("results/plots/plot_3way_auc.png", dpi=150, bbox_inches="tight")
+print("Saved results/plots/plot_3way_auc.png")
