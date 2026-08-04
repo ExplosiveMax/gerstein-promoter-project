@@ -1,0 +1,25 @@
+==============================================================================
+MACAQUE cross-species promoter classification — human vs rhesus (Mmul_10)
+n_pairs=1000 requested; seeds 0/1/42; MPS (non-deterministic → spread shown)
+==============================================================================
+
+A) Confound decomposition  (random 80/20 split, run_experiment.sh)
+   level      pairs/class   mean AUROC [min-max]      mean AUPRC [min-max]    
+   raw                999   0.4955 [0.4525-0.5206]    0.5024 [0.4780-0.5162]  
+   repeat             411   0.4818 [0.4487-0.5429]    0.5488 [0.5282-0.5860]  
+   repeat_gc          360   0.5088 [0.4406-0.5573]    0.5697 [0.4938-0.6097]  
+
+   per-seed AUROC/AUPRC:
+     raw        s0=0.453/0.478  s1=0.521/0.513  s42=0.513/0.516
+     repeat     s0=0.449/0.532  s1=0.543/0.586  s42=0.454/0.528
+     repeat_gc  s0=0.557/0.606  s1=0.528/0.610  s42=0.441/0.494
+
+B) Chromosome-holdout eval on repeat_gc  (classify_holdout.py; chr8/9 test)
+   mean AUROC 0.5739 [0.5439-0.5996]   mean AUPRC 0.5549 [0.5118-0.5954]
+     seed 0   auroc=0.5439  auprc=0.5118
+     seed 1   auroc=0.5996  auprc=0.5575
+     seed 42  auroc=0.5781  auprc=0.5954
+
+Context (prior species, repeat_gc holdout): mouse ~0.94, chimp ~0.50.
+Macaque (~25 My) is expected to fall between them.
+==============================================================================

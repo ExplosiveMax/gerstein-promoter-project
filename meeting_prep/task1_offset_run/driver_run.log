@@ -1,0 +1,86 @@
+START Tue Aug  4 00:14:22 EDT 2026
+===== OFFSET 0  00:14:22 =====
+  offset=0 seed=0 -> FINAL_RESULT seed=0 auc=0.7176 auprc=0.7412
+  offset=0 seed=1 -> FINAL_RESULT seed=1 auc=0.7210 auprc=0.7194
+  offset=0 seed=42 -> FINAL_RESULT seed=42 auc=0.7619 auprc=0.7669
+===== OFFSET 100  00:25:35 =====
+  offset=100 seed=0 -> FINAL_RESULT seed=0 auc=0.7259 auprc=0.7439
+  offset=100 seed=1 -> FINAL_RESULT seed=1 auc=0.7106 auprc=0.7329
+  offset=100 seed=42 -> FINAL_RESULT seed=42 auc=0.7677 auprc=0.8112
+===== OFFSET 200  00:36:48 =====
+  offset=200 seed=0 -> FINAL_RESULT seed=0 auc=0.6709 auprc=0.6652
+  offset=200 seed=1 -> FINAL_RESULT seed=1 auc=0.6609 auprc=0.6781
+  offset=200 seed=42 -> FINAL_RESULT seed=42 auc=0.7126 auprc=0.7612
+===== OFFSET 300  00:48:20 =====
+  offset=300 seed=0 -> FINAL_RESULT seed=0 auc=0.6943 auprc=0.7335
+  offset=300 seed=1 -> FINAL_RESULT seed=1 auc=0.6110 auprc=0.6526
+  offset=300 seed=42 -> FINAL_RESULT seed=42 auc=0.6830 auprc=0.7062
+===== OFFSET 400  01:01:16 =====
+  offset=400 seed=0 -> FINAL_RESULT seed=0 auc=0.6161 auprc=0.6462
+  offset=400 seed=1 -> FINAL_RESULT seed=1 auc=0.6623 auprc=0.6891
+  offset=400 seed=42 -> FINAL_RESULT seed=42 auc=0.6712 auprc=0.7104
+===== OFFSET 500  01:12:42 =====
+  offset=500 seed=0 -> FINAL_RESULT seed=0 auc=0.6582 auprc=0.6771
+  offset=500 seed=1 -> FINAL_RESULT seed=1 auc=0.6065 auprc=0.5817
+  offset=500 seed=42 -> FINAL_RESULT seed=42 auc=0.6539 auprc=0.6946
+===== OFFSET 600  01:23:56 =====
+  offset=600 seed=0 -> FINAL_RESULT seed=0 auc=0.5259 auprc=0.5466
+  offset=600 seed=1 -> FINAL_RESULT seed=1 auc=0.5720 auprc=0.5675
+  offset=600 seed=42 -> FINAL_RESULT seed=42 auc=0.5718 auprc=0.5788
+===== OFFSET 700  01:36:09 =====
+  offset=700 seed=0 -> FINAL_RESULT seed=0 auc=0.5106 auprc=0.5064
+  offset=700 seed=1 -> FINAL_RESULT seed=1 auc=0.5566 auprc=0.5637
+  offset=700 seed=42 -> FINAL_RESULT seed=42 auc=0.5408 auprc=0.5866
+===== OFFSET 800  01:48:31 =====
+  offset=800 seed=0 -> FINAL_RESULT seed=0 auc=0.4972 auprc=0.5259
+  offset=800 seed=1 -> FINAL_RESULT seed=1 auc=0.5293 auprc=0.5382
+  offset=800 seed=42 -> FINAL_RESULT seed=42 auc=0.5021 auprc=0.4921
+===== OFFSET 900  02:03:24 =====
+  offset=900 seed=0 -> FINAL_RESULT seed=0 auc=0.5863 auprc=0.5989
+  offset=900 seed=1 -> FINAL_RESULT seed=1 auc=0.4862 auprc=0.5211
+  offset=900 seed=42 -> FINAL_RESULT seed=42 auc=0.5587 auprc=0.5895
+===== OFFSET 1000  02:17:16 =====
+  offset=1000 seed=0 -> FINAL_RESULT seed=0 auc=0.5406 auprc=0.5791
+  offset=1000 seed=1 -> FINAL_RESULT seed=1 auc=0.4915 auprc=0.5018
+  offset=1000 seed=42 -> FINAL_RESULT seed=42 auc=0.6254 auprc=0.6071
+===== OFFSET 1100  02:29:18 =====
+  offset=1100 seed=0 -> FINAL_RESULT seed=0 auc=0.5180 auprc=0.5284
+  offset=1100 seed=1 -> FINAL_RESULT seed=1 auc=0.5400 auprc=0.5211
+  offset=1100 seed=42 -> FINAL_RESULT seed=42 auc=0.5481 auprc=0.5237
+===== OFFSET 1200  02:39:49 =====
+  offset=1200 seed=0 -> FINAL_RESULT seed=0 auc=0.4967 auprc=0.5238
+  offset=1200 seed=1 -> FINAL_RESULT seed=1 auc=0.5469 auprc=0.5802
+  offset=1200 seed=42 -> FINAL_RESULT seed=42 auc=0.5368 auprc=0.5460
+===== OFFSET 1300  02:50:01 =====
+  offset=1300 seed=0 -> FINAL_RESULT seed=0 auc=0.5149 auprc=0.5200
+  offset=1300 seed=1 -> FINAL_RESULT seed=1 auc=0.5152 auprc=0.5459
+  offset=1300 seed=42 -> FINAL_RESULT seed=42 auc=0.5633 auprc=0.5742
+===== OFFSET 1400  02:59:57 =====
+  offset=1400 seed=0 -> FINAL_RESULT seed=0 auc=0.5198 auprc=0.5318
+  offset=1400 seed=1 -> FINAL_RESULT seed=1 auc=0.4717 auprc=0.4871
+  offset=1400 seed=42 -> FINAL_RESULT seed=42 auc=0.5809 auprc=0.6043
+===== OFFSET 1500  03:10:23 =====
+  offset=1500 seed=0 -> FINAL_RESULT seed=0 auc=0.5457 auprc=0.5367
+  offset=1500 seed=1 -> FINAL_RESULT seed=1 auc=0.5163 auprc=0.4960
+  offset=1500 seed=42 -> FINAL_RESULT seed=42 auc=0.4704 auprc=0.4879
+===== OFFSET 1600  03:20:36 =====
+  offset=1600 seed=0 -> FINAL_RESULT seed=0 auc=0.4941 auprc=0.5058
+  offset=1600 seed=1 -> FINAL_RESULT seed=1 auc=0.5012 auprc=0.4927
+  offset=1600 seed=42 -> FINAL_RESULT seed=42 auc=0.5236 auprc=0.5316
+===== OFFSET 1700  03:30:32 =====
+  offset=1700 seed=0 -> FINAL_RESULT seed=0 auc=0.5321 auprc=0.5334
+  offset=1700 seed=1 -> FINAL_RESULT seed=1 auc=0.4518 auprc=0.4674
+  offset=1700 seed=42 -> FINAL_RESULT seed=42 auc=0.5148 auprc=0.5221
+===== OFFSET 1800  03:40:30 =====
+  offset=1800 seed=0 -> FINAL_RESULT seed=0 auc=0.5126 auprc=0.5072
+  offset=1800 seed=1 -> FINAL_RESULT seed=1 auc=0.4658 auprc=0.4814
+  offset=1800 seed=42 -> FINAL_RESULT seed=42 auc=0.5837 auprc=0.5771
+===== OFFSET 1900  03:50:23 =====
+  offset=1900 seed=0 -> FINAL_RESULT seed=0 auc=0.4728 auprc=0.4656
+  offset=1900 seed=1 -> FINAL_RESULT seed=1 auc=0.5498 auprc=0.5356
+  offset=1900 seed=42 -> FINAL_RESULT seed=42 auc=0.4982 auprc=0.5510
+===== OFFSET 2000  04:00:17 =====
+  offset=2000 seed=0 -> FINAL_RESULT seed=0 auc=0.5274 auprc=0.5228
+  offset=2000 seed=1 -> FINAL_RESULT seed=1 auc=0.4871 auprc=0.4878
+  offset=2000 seed=42 -> FINAL_RESULT seed=42 auc=0.5345 auprc=0.5405
+DONE Tue Aug  4 04:10:11 EDT 2026

@@ -1,0 +1,60 @@
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/huggingface_hub/file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/opt/homebrew/Caskroom/miniforge/base/envs/dnabert2/lib/python3.9/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/Users/maxwellkim/.cache/huggingface/modules/transformers_modules/zhihan1996/DNABERT-2-117M/7bce263b15377fc15361f52cfab88f8b586abda0/bert_layers.py:126: UserWarning: Unable to import Triton; defaulting MosaicBERT attention implementation to pytorch (this will reduce throughput when using this model).
+  warnings.warn(
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at zhihan1996/DNABERT-2-117M and are newly initialized: ['classifier.bias', 'bert.pooler.dense.bias', 'bert.pooler.dense.weight', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading sequences...
+Random seed: 1
+Promoters: 500, Random: 500
+Train: 800, Test: 200
+Loading tokenizer...
+Tokenizing...
+Loading model...
+Using device: mps
+
+Fine-tuning...
+Epoch 1, batch 10/100, loss: 0.6753
+Epoch 1, batch 20/100, loss: 0.7422
+Epoch 1, batch 30/100, loss: 0.6728
+Epoch 1, batch 40/100, loss: 0.6793
+Epoch 1, batch 50/100, loss: 0.6647
+Epoch 1, batch 60/100, loss: 0.6867
+Epoch 1, batch 70/100, loss: 0.7231
+Epoch 1, batch 80/100, loss: 0.6779
+Epoch 1, batch 90/100, loss: 0.6111
+Epoch 1, batch 100/100, loss: 0.7271
+Epoch 1 complete. Avg loss: 0.6956
+Epoch 2, batch 10/100, loss: 0.7124
+Epoch 2, batch 20/100, loss: 0.5487
+Epoch 2, batch 30/100, loss: 0.6133
+Epoch 2, batch 40/100, loss: 0.6442
+Epoch 2, batch 50/100, loss: 0.6211
+Epoch 2, batch 60/100, loss: 0.7325
+Epoch 2, batch 70/100, loss: 0.6868
+Epoch 2, batch 80/100, loss: 0.5733
+Epoch 2, batch 90/100, loss: 0.7521
+Epoch 2, batch 100/100, loss: 0.7128
+Epoch 2 complete. Avg loss: 0.6377
+Epoch 3, batch 10/100, loss: 0.5311
+Epoch 3, batch 20/100, loss: 0.4800
+Epoch 3, batch 30/100, loss: 0.4425
+Epoch 3, batch 40/100, loss: 0.3447
+Epoch 3, batch 50/100, loss: 0.4083
+Epoch 3, batch 60/100, loss: 0.5424
+Epoch 3, batch 70/100, loss: 0.5266
+Epoch 3, batch 80/100, loss: 0.3882
+Epoch 3, batch 90/100, loss: 0.2674
+Epoch 3, batch 100/100, loss: 0.7828
+Epoch 3 complete. Avg loss: 0.4408
+
+Evaluating...
+
+AUC Score: 0.4518
+AUPRC Score: 0.4674
+FINAL_RESULT seed=1 auc=0.4518 auprc=0.4674
+0.5 = random chance, higher = model can distinguish promoters from random DNA

@@ -1,0 +1,25 @@
+{
+  "target": "macaque",
+  "params": {
+    "upstream": 1000,
+    "downstream": 0,
+    "n_pairs": 1000,
+    "repeat_max": 0.2,
+    "gc_tol": 0.1,
+    "repeat_filter": false,
+    "gc_match": false,
+    "seed": 0
+  },
+  "orthologs_1to1": 19341,
+  "orthologs_annotated": 19330,
+  "orthologs_sampled": 1000,
+  "pairs_extracted": 999,
+  "raw_gc_gap_target_minus_human": 0.0034,
+  "gc_gap_final_target_minus_human": 0.0034,
+  "split_pairs": {
+    "train": 878,
+    "val": 35,
+    "test": 86
+  },
+  "final_examples_per_class": 999
+}
